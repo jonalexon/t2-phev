@@ -3,864 +3,1321 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jetour T2 PHEV | Grupo Roldán Ecuador</title>
-<meta name="description" content="Jetour T2 PHEV: SUV híbrido enchufable con 380 HP, 610 Nm, 1.000 km de autonomía y equipamiento de serie completo. Respaldo Grupo Roldán en Ecuador.">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/latin-600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/latin-700.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-condensed@5/latin-800.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/latin-400.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/latin-500.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/latin-600.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/barlow@5/latin-700.css">
-
+<title>Jetour T2 PHEV · Ficha de consulta</title>
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=saira-condensed:400,600,700,800,900|barlow:300,400,500,600,700" rel="stylesheet">
 <style>
 :root{
   --red:#e10613;
-  --red-dark:#b30510;
-  --ink:#0b0c10;
-  --ink-2:#101114;
-  --card-dark:#14161c;
-  --cell:#0f1116;
-  --light:#f4f5f7;
-  --text:#101114;
-  --muted:#5d6470;
-  --muted-2:#9aa1ad;
-  --line:#e6e8ec;
-  --line-dk:#22252d;
-  --line-dk2:#2a2e37;
-  --border-head:#1e2127;
-  --white:#ffffff;
+  --red-dark:#a8040f;
+  --bg-dark:#0b0c10;
+  --bg-dark-2:#13151b;
+  --bg-light:#f4f5f7;
+  --bg-light-2:#ffffff;
+  --text-light:#f4f5f7;
+  --text-muted:#9aa0ab;
+  --text-dark:#0b0c10;
+  --border-dark:rgba(255,255,255,.08);
+  --border-light:rgba(0,0,0,.08);
+  --shadow-sm:0 4px 14px rgba(0,0,0,.25);
+  --shadow-md:0 12px 30px rgba(0,0,0,.35);
+  --shadow-lg:0 24px 60px rgba(0,0,0,.45);
+  --radius:20px;
+  --radius-sm:12px;
+  --title:'Saira Condensed',sans-serif;
+  --body:'Barlow',sans-serif;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-  font-family:'Barlow','Segoe UI',system-ui,sans-serif;
-  font-size:16px;line-height:1.6;
-  color:var(--text);background:var(--light);
+  font-family:var(--body);
+  background:var(--bg-dark);
+  color:var(--text-light);
+  line-height:1.55;
   -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
 }
-h1,h2,h3,.font-cond{font-family:'Saira Condensed','Arial Narrow',sans-serif;line-height:1.15}
-a{color:inherit}
-::selection{background:var(--red);color:#fff}
+h1,h2,h3,h4{font-family:var(--title);font-weight:800;letter-spacing:.01em;line-height:1.05}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1280px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+section{scroll-margin-top:80px}
 
-/* ---------- TOPBAR ---------- */
-.topbar{
-  background:var(--red);color:#fff;text-align:center;
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;
-  font-weight:600;font-size:clamp(.68rem,1.6vw,.88rem);
-  letter-spacing:.08em;text-transform:uppercase;
-  padding:8px 14px;
+/* HEADER */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(11,12,16,.85);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border-dark);
 }
-.topbar .dot{opacity:.6;margin:0 6px}
-.topbar b{font-weight:800}
-
-/* ---------- HEADER ---------- */
-.site-header{
-  position:sticky;top:0;z-index:100;
-  background:var(--ink);
-  border-bottom:1px solid var(--border-head);
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  height:64px;padding:0 clamp(16px,4vw,32px);
-  transition:box-shadow .35s ease;
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px clamp(18px,4vw,40px);
+  max-width:1400px;margin:0 auto;
 }
-.site-header.scrolled{box-shadow:0 10px 30px rgba(0,0,0,.5)}
 .brand{
-  display:flex;align-items:baseline;gap:8px;white-space:nowrap;text-decoration:none;
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;
-  font-size:clamp(1.05rem,2.6vw,1.4rem);letter-spacing:.05em;text-transform:uppercase;color:#fff;
+  font-family:var(--title);font-weight:900;font-size:1.25rem;
+  letter-spacing:.15em;color:#fff;
 }
-.brand .model{color:var(--red)}
-.brand .ec{color:var(--muted-2);font-size:.6em;font-weight:600;letter-spacing:.18em}
-.hnav{display:none;gap:4px}
-.hnav a{
-  color:#c9ced8;text-decoration:none;font-weight:600;font-size:.92rem;
-  padding:12px 14px;border-radius:8px;min-height:44px;display:inline-flex;align-items:center;
-  transition:color .25s ease,background .25s ease;
+.brand span{color:var(--red)}
+.nav-menu{display:flex;gap:28px;list-style:none}
+.nav-menu a{
+  font-size:.82rem;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--text-muted);
+  transition:color .25s;
 }
-.hnav a:hover{color:#fff;background:var(--card-dark)}
-@media(min-width:820px){.hnav{display:flex}}
+.nav-menu a:hover{color:var(--red)}
+.nav-toggle{display:none}
+.nav-toggle > summary{
+  list-style:none;cursor:pointer;
+  width:42px;height:42px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--border-dark);border-radius:10px;
+  color:#fff;font-size:1.2rem;
+}
+.nav-toggle > summary::-webkit-details-marker{display:none}
+.nav-toggle[open] > summary{background:var(--red);border-color:var(--red)}
+.nav-mobile{
+  position:absolute;top:64px;right:16px;left:16px;
+  background:rgba(19,21,27,.97);
+  border:1px solid var(--border-dark);border-radius:14px;
+  padding:14px;list-style:none;
+  display:flex;flex-direction:column;gap:4px;
+}
+.nav-mobile a{
+  display:block;padding:12px 14px;border-radius:8px;
+  font-size:.9rem;color:var(--text-light);
+}
+.nav-mobile a:hover{background:rgba(225,6,19,.15);color:var(--red)}
 
-/* ---------- HERO ---------- */
+@media(max-width:860px){
+  .nav-menu{display:none}
+  .nav-toggle{display:block}
+}
+
+/* HERO */
 .hero{
-  position:relative;overflow:hidden;background:var(--ink);
-  padding:clamp(64px,9vw,110px) 24px clamp(48px,7vw,80px);
+  position:relative;min-height:92vh;
+  display:flex;align-items:center;
+  background:
+    radial-gradient(ellipse at 75% 25%, rgba(225,6,19,.18), transparent 55%),
+    radial-gradient(ellipse at 15% 85%, rgba(225,6,19,.08), transparent 50%),
+    linear-gradient(180deg,#0b0c10 0%,#13151b 100%);
+  overflow:hidden;padding:120px 0 80px;
 }
 .hero::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:
-    radial-gradient(55% 45% at 80% 10%,rgba(225,6,19,.30),transparent 60%),
-    radial-gradient(42% 46% at 6% 90%,rgba(225,6,19,.14),transparent 62%),
-    radial-gradient(30% 30% at 45% 55%,rgba(225,6,19,.06),transparent 70%);
+  content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse at center,#000 20%,transparent 70%);
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 20%,transparent 70%);
 }
-.beam{
-  position:absolute;left:-46%;width:46%;height:2px;
-  background:linear-gradient(90deg,transparent,rgba(225,6,19,.95),transparent);
-  filter:drop-shadow(0 0 10px rgba(225,6,19,.9));
-  animation:beam 7s linear infinite;pointer-events:none;
+.hero-inner{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--text-muted);margin-bottom:22px;
 }
-.beam.b1{top:16%}
-.beam.b2{top:82%;animation-duration:9.5s;animation-delay:2.2s;opacity:.55}
-@keyframes beam{0%{transform:translateX(0)}100%{transform:translateX(460%)}}
-.hero-inner{position:relative;z-index:2;max-width:1160px;margin:0 auto}
-.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
-.badge{
-  display:inline-flex;align-items:center;gap:6px;
-  background:rgba(225,6,19,.09);border:1px solid rgba(225,6,19,.35);
-  color:var(--red);font-weight:600;font-size:.78rem;
-  letter-spacing:.1em;text-transform:uppercase;
-  padding:7px 14px;border-radius:999px;
+.hero-eyebrow::before{
+  content:"";width:36px;height:1px;background:var(--red);
 }
 .hero h1{
-  font-weight:800;font-size:clamp(2rem,4vw,3rem);
-  color:#fff;text-transform:uppercase;letter-spacing:.02em;
+  font-size:clamp(3rem,9vw,7rem);
+  font-weight:900;text-transform:uppercase;
+  letter-spacing:-.01em;
+  background:linear-gradient(180deg,#fff 0%,#c9ccd3 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:18px;
 }
-.hero h1 .red{color:var(--red)}
-.hero-sub{
-  color:#c9ced8;font-size:clamp(1rem,2vw,1.2rem);
-  max-width:660px;margin:16px 0 30px;
+.hero h1 em{
+  font-style:normal;color:var(--red);
+  -webkit-text-fill-color:var(--red);
 }
-.cta-row{display:flex;flex-wrap:wrap;gap:14px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  min-height:48px;padding:12px 28px;border-radius:10px;
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;
-  font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
-  border:1px solid transparent;cursor:pointer;
-  transition:background .3s ease,color .3s ease,transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+.hero-tag{
+  font-family:var(--title);font-size:clamp(1.1rem,2.2vw,1.6rem);
+  font-weight:600;color:#fff;margin-bottom:26px;letter-spacing:.02em;
 }
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(225,6,19,.35)}
-.btn-ghost{background:transparent;color:#fff;border-color:var(--line-dk2)}
-.btn-ghost:hover{border-color:var(--red);transform:translateY(-2px)}
+.hero-intro{
+  max-width:720px;font-size:clamp(1rem,1.4vw,1.15rem);
+  color:var(--text-muted);line-height:1.7;
+}
+.hero-badge{
+  margin-top:40px;display:inline-flex;align-items:center;gap:14px;
+  padding:14px 22px;border:1px solid var(--border-dark);
+  border-radius:100px;background:rgba(255,255,255,.03);
+  backdrop-filter:blur(8px);
+  font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--text-light);
+}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}
 
-/* ---------- STATS ---------- */
-.stats{background:var(--ink);padding:0 24px clamp(52px,7vw,84px)}
+/* STATS */
+.stats{
+  background:var(--bg-dark);
+  border-top:1px solid var(--border-dark);
+  padding:70px 0;
+}
 .stats-grid{
-  max-width:1160px;margin:0 auto;
-  background:var(--line-dk);border:1px solid var(--line-dk2);
-  border-radius:16px;padding:clamp(10px,2vw,16px);
-  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
+  background:var(--border-dark);
+  border:1px solid var(--border-dark);border-radius:var(--radius);
+  overflow:hidden;
 }
-@media(min-width:740px){.stats-grid{grid-template-columns:repeat(4,1fr)}}
 .stat{
-  background:var(--cell);border:1px solid var(--line-dk2);border-radius:12px;
-  padding:20px 12px;text-align:center;
-  transition:border-color .3s ease,transform .3s ease;
+  background:var(--bg-dark);padding:clamp(24px,3vw,40px) clamp(18px,2.5vw,32px);
+  transition:background .3s;
 }
-.stat:hover{border-color:rgba(225,6,19,.55);transform:translateY(-3px)}
-.stat .num{
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;
-  font-size:clamp(1.7rem,3vw,2.4rem);color:#fff;line-height:1;
+.stat:hover{background:var(--bg-dark-2)}
+.stat-label{
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--text-muted);margin-bottom:14px;
+  font-family:var(--body);font-weight:500;
 }
-.stat .num span{color:var(--red);font-size:.62em;margin-left:3px}
-.stat .lbl{
-  color:var(--muted-2);font-size:.76rem;text-transform:uppercase;
-  letter-spacing:.1em;font-weight:600;margin-top:9px;
+.stat-value{
+  font-family:var(--title);font-weight:800;
+  font-size:clamp(2rem,4vw,3.4rem);
+  line-height:1;color:#fff;letter-spacing:-.01em;
 }
-
-/* ---------- SECCIONES ---------- */
-.section{padding:clamp(56px,8vw,96px) 24px}
-.wrap{max-width:1160px;margin:0 auto}
-.kicker{
-  display:flex;align-items:center;gap:12px;
-  color:var(--red);font-family:'Saira Condensed','Arial Narrow',sans-serif;
-  font-weight:700;font-size:.85rem;letter-spacing:.24em;text-transform:uppercase;
+.stat-value .unit{color:var(--red);font-weight:700;font-size:.55em;margin-left:4px}
+.stat-value.small{font-size:clamp(1.2rem,2.2vw,1.8rem);line-height:1.15}
+.stat-sub{
+  margin-top:10px;font-size:.85rem;color:var(--text-muted);
+  font-family:var(--body);
 }
-.kicker::before{content:"";width:34px;height:3px;background:var(--red);border-radius:2px;flex-shrink:0}
-.h2{
-  font-weight:700;font-size:clamp(1.5rem,3vw,2.25rem);
-  text-transform:uppercase;margin:12px 0 8px;letter-spacing:.02em;
-}
-.section.white{background:var(--white)}
-.section.light{background:var(--light)}
-.section.dark{background:var(--ink);color:#fff}
-.section.dark .h2{color:#fff}
-.section.dark .kicker{color:var(--red)}
-.lead{color:var(--muted);font-size:clamp(1rem,1.6vw,1.08rem);max-width:860px}
-.section.dark .lead{color:var(--muted-2)}
-
-/* ---------- REVEAL ---------- */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.22,.61,.36,1)}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){
-  .reveal{opacity:1;transform:none;transition:none}
-  .beam{animation:none;opacity:0}
-  *{scroll-behavior:auto}
+@media(max-width:860px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-/* ---------- PRESENTACIÓN ---------- */
-.present p{color:var(--muted);max-width:860px;margin-bottom:16px;font-size:clamp(1rem,1.7vw,1.12rem)}
-.present p strong{color:var(--text)}
-.strengths{display:grid;gap:16px;margin-top:30px;grid-template-columns:1fr}
-@media(min-width:640px){.strengths{grid-template-columns:repeat(3,1fr)}}
-.strength{
-  background:#fff;border:1px solid var(--line);border-radius:14px;
-  padding:22px;display:flex;gap:14px;align-items:flex-start;
-  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+/* PRESENTACIÓN */
+.presentation{background:var(--bg-light);color:var(--text-dark);padding:clamp(70px,9vw,120px) 0}
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.72rem;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--red);margin-bottom:18px;font-weight:600;
 }
-.strength:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(16,17,20,.09);border-color:rgba(225,6,19,.4)}
-.strength .ico{
-  width:44px;height:44px;min-width:44px;border-radius:50%;
-  background:rgba(225,6,19,.09);color:var(--red);
-  display:grid;place-items:center;font-size:20px;
+.section-eyebrow::before{content:"";width:28px;height:2px;background:var(--red)}
+.section-title{
+  font-size:clamp(2rem,4.5vw,3.4rem);
+  text-transform:uppercase;margin-bottom:40px;
+  max-width:900px;
 }
-.strength h3{font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem)}
-.strength p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.presentation-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;
+}
+.presentation p{
+  font-size:clamp(1rem,1.25vw,1.1rem);
+  line-height:1.8;color:#3a3f47;margin-bottom:22px;
+}
+.presentation p strong{color:var(--text-dark);font-weight:600}
+.presentation-aside{
+  border-left:3px solid var(--red);padding-left:22px;
+  font-family:var(--title);font-size:clamp(1.2rem,1.8vw,1.5rem);
+  font-weight:600;line-height:1.4;color:var(--text-dark);
+}
+@media(max-width:860px){
+  .presentation-grid{grid-template-columns:1fr;gap:30px}
+}
 
-/* ---------- DATOS CURIOSOS ---------- */
-.cur-grid{display:grid;gap:24px;margin-top:36px;grid-template-columns:1fr}
-@media(min-width:620px){.cur-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:980px){.cur-grid{grid-template-columns:repeat(3,1fr)}}
-.cur-card{
-  background:var(--card-dark);
-  background-image:radial-gradient(60% 55% at 18% 0%,rgba(225,6,19,.14),transparent 62%);
-  border:1px solid var(--line-dk2);border-left:4px solid var(--red);
-  border-radius:14px;padding:20px;
-  transition:transform .35s cubic-bezier(.22,.61,.36,1),box-shadow .35s ease,border-color .35s ease;
+/* INTRO VERSIÓN */
+.version-intro{
+  background:var(--bg-light);color:var(--text-dark);
+  padding:0 0 clamp(70px,9vw,120px);
+  border-top:1px solid var(--border-light);
 }
-.cur-card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(0,0,0,.5);border-left-color:#ff2b37;border-color:#3a3f4b}
-.cur-ico{
-  width:46px;height:46px;border-radius:50%;background:rgba(225,6,19,.15);
-  display:grid;place-items:center;font-size:21px;margin-bottom:14px;
+.version-intro-inner{
+  background:linear-gradient(135deg,#ffffff 0%,#f0f1f4 100%);
+  border:1px solid var(--border-light);
+  border-radius:var(--radius);
+  padding:clamp(30px,4vw,60px);
+  box-shadow:var(--shadow-sm);
 }
-.cur-card h3{color:#fff;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);text-transform:uppercase;letter-spacing:.03em}
-.cur-card p{color:var(--muted-2);font-size:.95rem;margin-top:8px}
+.version-intro h3{
+  font-size:clamp(1.6rem,3vw,2.4rem);
+  text-transform:uppercase;margin-bottom:8px;
+}
+.version-intro .version-sub{
+  font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--red);font-weight:600;margin-bottom:26px;
+}
+.version-intro p{
+  font-size:clamp(.98rem,1.2vw,1.05rem);
+  line-height:1.8;color:#3a3f47;margin-bottom:18px;
+}
+.version-specs-mini{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  margin-top:32px;padding-top:32px;border-top:1px solid var(--border-light);
+}
+.vsm-item .vsm-val{
+  font-family:var(--title);font-weight:800;
+  font-size:clamp(1.5rem,2.5vw,2rem);color:var(--text-dark);line-height:1;
+}
+.vsm-item .vsm-val .u{color:var(--red);font-size:.6em;margin-left:3px}
+.vsm-item .vsm-lbl{
+  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+  color:#6b7079;margin-top:8px;
+}
+@media(max-width:700px){
+  .version-specs-mini{grid-template-columns:repeat(2,1fr)}
+}
 
-/* ---------- ACORDEONES ---------- */
-.acc{display:flex;flex-direction:column;gap:14px;margin-top:36px}
-.acc-item{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
-.acc-head{
-  width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;
-  background:var(--card-dark);color:#fff;border:none;cursor:pointer;text-align:left;
-  padding:12px 16px;min-height:58px;
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:600;
-  font-size:clamp(1.1rem,2vw,1.4rem);text-transform:uppercase;letter-spacing:.04em;
-  transition:background .3s ease;
+/* DETALLES */
+.details{
+  background:var(--bg-dark);padding:clamp(70px,9vw,120px) 0;
+  position:relative;
 }
-.acc-head:hover{background:#1a1d25}
-.ah-left{display:flex;align-items:center;gap:12px}
-.ah-emoji{
-  width:36px;height:36px;min-width:36px;border-radius:9px;
-  background:rgba(225,6,19,.16);display:grid;place-items:center;font-size:18px;
+.details::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 20% 30%,rgba(225,6,19,.08),transparent 50%);
+  pointer-events:none;
 }
-.acc-arrow{color:var(--red);font-size:.95rem;min-width:20px;transition:transform .35s cubic-bezier(.22,.61,.36,1)}
-.acc-head[aria-expanded="true"] .acc-arrow{transform:rotate(180deg)}
-.acc-body{
-  max-height:0;overflow:hidden;background:#fff;opacity:0;
-  transition:max-height .45s cubic-bezier(.22,.61,.36,1),opacity .35s ease;
+.details-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+  position:relative;z-index:1;
 }
-.acc-body.open{opacity:1}
-.acc-inner{padding:clamp(18px,3vw,28px);display:flex;flex-direction:column;gap:24px}
-.acc-note{color:var(--muted);font-size:.98rem;max-width:900px}
-.acc-note strong{color:var(--text)}
+.detail-card{
+  position:relative;padding:clamp(28px,3.5vw,44px);
+  background:linear-gradient(135deg,rgba(255,255,255,.04) 0%,rgba(255,255,255,.01) 100%);
+  border:1px solid var(--border-dark);
+  border-radius:var(--radius);
+  backdrop-filter:blur(10px);
+  transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
+  overflow:hidden;
+}
+.detail-card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:var(--red);
+}
+.detail-card:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-lg);
+  border-color:rgba(225,6,19,.35);
+}
+.detail-icon{
+  width:54px;height:54px;border-radius:14px;
+  background:linear-gradient(135deg,var(--red),var(--red-dark));
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.6rem;margin-bottom:22px;
+  box-shadow:0 8px 20px rgba(225,6,19,.35);
+}
+.detail-card h3{
+  font-size:clamp(1.3rem,2vw,1.7rem);
+  text-transform:uppercase;color:#fff;margin-bottom:14px;
+}
+.detail-card p{
+  color:var(--text-muted);font-size:.98rem;line-height:1.7;margin-bottom:12px;
+}
+.detail-card .highlight{
+  color:#fff;font-family:var(--title);font-weight:700;
+  font-size:1.05rem;
+}
+@media(max-width:860px){
+  .details-grid{grid-template-columns:1fr}
+}
 
-.feat-grid{display:grid;gap:16px;grid-template-columns:1fr}
-@media(min-width:640px){.feat-grid{grid-template-columns:repeat(2,1fr)}}
+/* CARACTERÍSTICAS */
+.features{background:var(--bg-light);color:var(--text-dark);padding:clamp(70px,9vw,120px) 0}
+.features .section-title{color:var(--text-dark)}
+.acc-group{display:flex;flex-direction:column;gap:14px}
+.acc-cat{
+  background:#fff;border:1px solid var(--border-light);
+  border-radius:var(--radius-sm);overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,.04);
+}
+.acc-cat > summary{
+  list-style:none;cursor:pointer;
+  padding:22px 26px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  font-family:var(--title);font-weight:700;
+  font-size:clamp(1.1rem,1.6vw,1.35rem);
+  text-transform:uppercase;color:var(--text-dark);
+  transition:background .25s;
+}
+.acc-cat > summary::-webkit-details-marker{display:none}
+.acc-cat > summary:hover{background:#fafbfc}
+.acc-cat[open] > summary{background:#fafbfc;border-bottom:1px solid var(--border-light)}
+.acc-cat > summary .acc-icon{
+  width:36px;height:36px;border-radius:10px;
+  background:var(--bg-dark);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;transition:transform .3s, background .3s;
+  flex-shrink:0;
+}
+.acc-cat[open] > summary .acc-icon{background:var(--red);transform:rotate(45deg)}
+.acc-body{padding:6px 26px 26px}
 .feat{
-  background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;
-  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+  padding:22px 0;border-top:1px solid var(--border-light);
 }
-.feat:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(16,17,20,.08);border-color:rgba(225,6,19,.35)}
-.feat .f-ico{
-  width:42px;height:42px;border-radius:50%;background:rgba(225,6,19,.09);
-  display:grid;place-items:center;font-size:19px;margin-bottom:12px;
-}
-.feat h3{font-weight:600;font-size:clamp(1.1rem,2vw,1.3rem)}
-.feat p{color:var(--muted);font-size:.93rem;margin-top:6px}
-
-.feat-pro{
-  background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);
-  border-radius:14px;padding:22px;
-  box-shadow:0 10px 26px rgba(16,17,20,.05);
-}
-.feat-pro h3{font-weight:700;font-size:clamp(1.15rem,2vw,1.45rem);text-transform:uppercase}
-.feat-pro .row{margin-top:12px;font-size:.97rem;color:var(--muted)}
-.feat-pro .row b{color:var(--text)}
-.feat-pro .row.mean{
-  color:var(--red);font-weight:600;
-  border-top:1px dashed var(--line);padding-top:12px;
-}
-
-.sub-title{
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;
-  font-size:clamp(1.1rem,2vw,1.35rem);text-transform:uppercase;letter-spacing:.05em;
+.feat:first-child{border-top:none}
+.feat-name{
+  font-family:var(--title);font-weight:700;
+  font-size:1.15rem;color:var(--text-dark);margin-bottom:10px;
   display:flex;align-items:center;gap:10px;
 }
-.sub-title::before{content:"";width:22px;height:3px;background:var(--red);border-radius:2px}
+.feat-name::before{
+  content:"";width:6px;height:6px;border-radius:50%;background:var(--red);
+}
+.feat-desc{color:#3a3f47;font-size:.95rem;line-height:1.7;margin-bottom:14px}
+.feat-row{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;
+  margin-top:14px;
+}
+.feat-block{
+  background:#f8f9fb;border-left:3px solid var(--red);
+  padding:14px 16px;border-radius:0 8px 8px 0;
+}
+.feat-block .fb-label{
+  font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--red);font-weight:700;margin-bottom:6px;
+}
+.feat-block p{font-size:.88rem;line-height:1.6;color:#2d3138;margin:0}
+.feat-block.benefit{border-left-color:#0b0c10;background:#0b0c10;color:#fff}
+.feat-block.benefit .fb-label{color:var(--red)}
+.feat-block.benefit p{color:#e8e9ed}
+@media(max-width:760px){
+  .feat-row{grid-template-columns:1fr}
+}
 
-.chips{display:flex;flex-wrap:wrap;gap:10px}
-.chip{
-  background:rgba(225,6,19,.09);border:1px solid rgba(225,6,19,.25);color:var(--red);
-  font-weight:600;font-size:.85rem;padding:9px 15px;border-radius:999px;
+/* PERFIL */
+.profiles{background:var(--bg-dark);padding:clamp(70px,9vw,120px) 0}
+.profiles-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:22px;
 }
-.chip.dark{background:var(--card-dark);color:#fff;border-color:var(--line-dk2)}
+.profile-card{
+  padding:clamp(26px,3vw,38px);
+  background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(255,255,255,.01));
+  border:1px solid var(--border-dark);border-radius:var(--radius);
+  backdrop-filter:blur(10px);
+  transition:transform .3s, border-color .3s;
+}
+.profile-card:hover{transform:translateY(-4px);border-color:rgba(225,6,19,.4)}
+.profile-card .p-icon{
+  font-size:1.8rem;margin-bottom:16px;
+}
+.profile-card h3{
+  font-size:clamp(1.2rem,1.8vw,1.5rem);
+  text-transform:uppercase;color:#fff;margin-bottom:10px;
+}
+.profile-card .p-need{
+  font-size:.92rem;color:var(--text-muted);margin-bottom:18px;line-height:1.6;
+}
+.profile-card ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.profile-card li{
+  font-size:.9rem;color:#d8dae0;padding-left:22px;position:relative;line-height:1.55;
+}
+.profile-card li::before{
+  content:"";position:absolute;left:0;top:8px;
+  width:12px;height:2px;background:var(--red);
+}
+@media(max-width:860px){
+  .profiles-grid{grid-template-columns:1fr}
+}
 
-.sig-grid{display:grid;gap:12px;grid-template-columns:1fr}
-@media(min-width:600px){.sig-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.sig-grid{grid-template-columns:repeat(3,1fr)}}
-.sig{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;transition:border-color .3s ease,transform .3s ease}
-.sig:hover{border-color:rgba(225,6,19,.4);transform:translateY(-2px)}
-.sig b{color:var(--red);font-family:'Saira Condensed','Arial Narrow',sans-serif;font-size:1.08rem;letter-spacing:.08em}
-.sig .full{display:block;font-weight:600;font-size:.84rem;margin:2px 0 4px}
-.sig p{font-size:.86rem;color:var(--muted)}
+/* FICHA TÉCNICA */
+.tech{background:var(--bg-light);color:var(--text-dark);padding:clamp(70px,9vw,120px) 0}
+.tech .section-title{color:var(--text-dark)}
+.tech-wrap{
+  background:#fff;border:1px solid var(--border-light);
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-sm);
+}
+.tech-scroll{overflow-x:auto}
+.tech-table{
+  width:100%;border-collapse:collapse;min-width:560px;
+}
+.tech-table th, .tech-table td{
+  padding:16px 22px;text-align:left;
+  border-bottom:1px solid var(--border-light);
+  font-size:.92rem;vertical-align:top;
+}
+.tech-table thead th{
+  background:var(--bg-dark);color:#fff;
+  font-family:var(--title);font-weight:700;
+  font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;
+  position:sticky;top:0;z-index:2;
+}
+.tech-table thead th.active{background:var(--red)}
+.tech-table tbody th{
+  font-weight:600;color:var(--text-dark);
+  background:#fafbfc;position:sticky;left:0;z-index:1;
+  min-width:220px;
+}
+.tech-table tbody tr:hover td{background:#fafbfc}
+.tech-table tbody td.active{background:rgba(225,6,19,.05);font-weight:500}
+.tech-table .cat-row th, .tech-table .cat-row td{
+  background:var(--bg-dark);color:#fff;
+  font-family:var(--title);font-weight:700;
+  font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:12px 22px;
+}
 
-.colors{display:flex;flex-wrap:wrap;gap:16px 26px}
-.color{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted);font-weight:600}
-.swatch{width:26px;height:26px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #c6ccd6}
-.sw-blanco{background:#f2f3f5}
-.sw-plata{background:linear-gradient(135deg,#e2e6ea,#b7bdc5)}
-.sw-negro{background:#101114}
-.sw-cian{background:#9db8bc}
+/* RESPALDO */
+.backing{
+  background:var(--bg-dark);padding:clamp(70px,9vw,120px) 0;
+  border-top:1px solid var(--border-dark);
+  position:relative;overflow:hidden;
+}
+.backing::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 50%,rgba(225,6,19,.12),transparent 60%);
+}
+.backing-inner{position:relative;z-index:1;text-align:center;max-width:900px;margin:0 auto}
+.backing h2{
+  font-size:clamp(2rem,4.5vw,3.2rem);
+  text-transform:uppercase;margin-bottom:18px;
+}
+.backing-sub{color:var(--text-muted);font-size:1.05rem;margin-bottom:50px}
+.backing-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:30px;
+  margin-bottom:50px;
+}
+.bs-item .bs-val{
+  font-family:var(--title);font-weight:900;
+  font-size:clamp(2.2rem,5vw,3.6rem);
+  background:linear-gradient(180deg,#fff,#b8bcc4);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  line-height:1;
+}
+.bs-item .bs-val em{
+  font-style:normal;-webkit-text-fill-color:var(--red);color:var(--red);
+}
+.bs-item .bs-lbl{
+  font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--text-muted);margin-top:10px;
+}
+.backing-locations{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;
+  padding-top:40px;border-top:1px solid var(--border-dark);
+}
+.loc-tag{
+  padding:10px 18px;border:1px solid var(--border-dark);
+  border-radius:100px;font-size:.82rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--text-light);
+  background:rgba(255,255,255,.03);
+}
+@media(max-width:700px){
+  .backing-stats{grid-template-columns:1fr;gap:20px}
+}
 
-.table-wrap{overflow-x:auto;scrollbar-width:none;border:1px solid var(--line);border-radius:14px;background:#fff}
-.table-wrap::-webkit-scrollbar{display:none}
-table{width:100%;border-collapse:collapse;min-width:540px}
-th,td{padding:12px 18px;text-align:left;font-size:.95rem;border-bottom:1px solid var(--line)}
-thead th{
-  background:var(--card-dark);color:#fff;
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;
-  font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;
+/* FOOTER */
+footer{
+  background:#05060a;padding:36px 0;
+  border-top:1px solid var(--border-dark);
+  text-align:center;
 }
-tbody tr:nth-child(even){background:#fafbfc}
-tbody tr:last-child td{border-bottom:none}
-td:first-child{color:var(--muted);font-weight:500}
-td:last-child{font-weight:600}
-td:last-child .red{color:var(--red)}
+footer p{
+  font-family:var(--title);font-weight:700;
+  font-size:clamp(.9rem,1.3vw,1.05rem);
+  letter-spacing:.25em;text-transform:uppercase;
+  color:var(--text-muted);
+}
+footer p span{color:var(--red)}
 
-/* ---------- PERFILES ---------- */
-.prof-grid{display:grid;gap:20px;margin-top:36px;grid-template-columns:1fr}
-@media(min-width:620px){.prof-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1100px){.prof-grid{grid-template-columns:repeat(4,1fr)}}
-.prof{
-  background:var(--ink-2);border:1px solid var(--line-dk2);border-radius:14px;padding:24px;
-  display:flex;flex-direction:column;
-  transition:transform .35s cubic-bezier(.22,.61,.36,1),border-color .35s ease,box-shadow .35s ease;
-}
-.prof:hover{transform:translateY(-6px);border-color:var(--red);box-shadow:0 18px 40px rgba(16,17,20,.28)}
-.prof-ico{
-  width:48px;height:48px;border-radius:50%;background:rgba(225,6,19,.1);
-  display:grid;place-items:center;font-size:22px;margin-bottom:14px;
-}
-.prof-tag{
-  align-self:flex-start;background:var(--red);color:#fff;
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:700;
-  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
-  padding:4px 10px;border-radius:999px;margin-bottom:12px;
-}
-.prof h3{color:#fff;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);text-transform:uppercase}
-.prof p{color:var(--muted-2);font-size:.94rem;margin-top:8px}
-.prof ul{margin-top:16px;list-style:none;display:flex;flex-direction:column;gap:9px}
-.prof li{color:#c9ced8;font-size:.9rem;padding-left:18px;position:relative}
-.prof li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--red)}
-
-/* ---------- RESPALDO ---------- */
-.respaldo{
-  background:var(--ink);
-  background-image:radial-gradient(60% 50% at 82% 0%,rgba(225,6,19,.18),transparent 62%);
-}
-.resp-strip{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:32px 0 8px;
-}
-@media(min-width:820px){.resp-strip{grid-template-columns:repeat(4,1fr)}}
-.resp-strip .stat{background:var(--cell)}
-.resp-grid{display:grid;gap:20px;margin-top:24px;grid-template-columns:1fr}
-@media(min-width:940px){.resp-grid{grid-template-columns:1.25fr 1fr 1fr}}
-.resp-card{
-  background:var(--card-dark);border:1px solid var(--line-dk2);border-radius:14px;padding:26px;
-  transition:transform .35s ease,border-color .35s ease;
-}
-.resp-card:hover{transform:translateY(-4px);border-color:rgba(225,6,19,.5)}
-.resp-card h3{color:#fff;font-weight:700;font-size:clamp(1.15rem,2vw,1.5rem);text-transform:uppercase}
-.resp-card p{color:var(--muted-2);font-size:.95rem;margin-top:10px}
-.resp-card p b{color:#fff}
-.brand-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.brand-chips .chip{background:rgba(225,6,19,.09)}
-.gar-num{
-  font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;
-  font-size:clamp(2.2rem,4vw,3rem);color:var(--red);line-height:1;margin:8px 0 4px;
-}
-.gar-sub{color:#fff;font-weight:600;font-size:1rem}
-
-/* ---------- FOOTER ---------- */
-footer{background:#07080b;color:var(--muted-2);padding:44px 24px 34px;font-size:.92rem}
-.foot-wrap{max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
-.foot-top{
-  display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:flex-start;
-  border-bottom:1px solid var(--card-dark);padding-bottom:22px;
-}
-.foot-brand{font-family:'Saira Condensed','Arial Narrow',sans-serif;font-weight:800;color:#fff;font-size:1.25rem;text-transform:uppercase;letter-spacing:.05em}
-.foot-brand .model{color:var(--red)}
-.foot-brand small{display:block;font-family:'Barlow','Segoe UI',system-ui,sans-serif;font-weight:400;color:var(--muted-2);font-size:.85rem;letter-spacing:0;text-transform:none;margin-top:6px;max-width:340px}
-.foot-links{display:flex;flex-wrap:wrap;gap:4px 20px}
-.foot-links a{color:var(--muted-2);text-decoration:none;font-weight:500;padding:6px 0;min-height:44px;display:inline-flex;align-items:center;transition:color .25s ease}
-.foot-links a:hover{color:#fff}
-.foot-note{font-size:.78rem;color:var(--muted);max-width:900px}
+/* UTIL */
+.na{color:#8a8f98;font-style:italic;font-size:.85rem}
 </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
-<div class="topbar">
-  <b>Grupo Roldán</b><span class="dot">·</span>Jetour<span class="dot">·</span>JAC<span class="dot">·</span>SANY<span class="dot">·</span>YTO<span class="dot">·</span>Karry<span class="dot">·</span>Textron<span class="dot">·</span>Zongshen<span class="dot">·</span><b>+50 años</b><span class="dot">·</span><b>27 concesionarios</b>
-</div>
-
-<!-- HEADER -->
-<header class="site-header" id="siteHeader">
-  <a class="brand" href="#inicio">JETOUR <span class="model">T2 PHEV</span> <span class="ec">ECUADOR</span></a>
-  <nav class="hnav">
-    <a href="#detalles">Detalles</a>
-    <a href="#caracteristicas">Características</a>
-    <a href="#perfiles">Perfiles</a>
-    <a href="#respaldo">Respaldo</a>
-  </nav>
+<header>
+  <div class="nav">
+    <div class="brand">JETOUR <span>·</span> T2 PHEV</div>
+    <ul class="nav-menu">
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#detalles">Detalles</a></li>
+      <li><a href="#caracteristicas">Características</a></li>
+      <li><a href="#ficha">Ficha técnica</a></li>
+      <li><a href="#respaldo">Respaldo</a></li>
+    </ul>
+    <details class="nav-toggle">
+      <summary>☰</summary>
+      <ul class="nav-mobile">
+        <li><a href="#presentacion">Presentación</a></li>
+        <li><a href="#detalles">Detalles</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#ficha">Ficha técnica</a></li>
+        <li><a href="#respaldo">Respaldo</a></li>
+      </ul>
+    </details>
+  </div>
 </header>
 
-<main>
-
 <!-- HERO -->
-<section class="hero" id="inicio">
-  <span class="beam b1"></span>
-  <span class="beam b2"></span>
+<section class="hero" id="top">
   <div class="hero-inner">
-    <div class="hero-badges reveal">
-      <span class="badge">🔌 Híbrido enchufable PHEV</span>
-      <span class="badge">✅ Versión única · Todo de serie</span>
-      <span class="badge">🛡️ Garantía 10 años / 120.000 km</span>
-    </div>
-    <h1 class="reveal">JETOUR <span class="red">T2 PHEV</span></h1>
-    <p class="hero-sub reveal">El SUV híbrido enchufable que combina potencia de deportivo, autonomía de viajero incansable y tecnología de clase superior. Un solo nivel de equipamiento: completo, sin letra pequeña.</p>
-    <div class="cta-row reveal">
-      <a class="btn btn-red" href="#caracteristicas">Explorar características</a>
-      <a class="btn btn-ghost" href="#detalles">Datos curiosos</a>
+    <div class="hero-eyebrow">SUV Plug-in Hybrid · Ecuador</div>
+    <h1>Jetour <em>T2</em> PHEV</h1>
+    <div class="hero-tag">Tres motores. Mil kilómetros. Cero concesiones.</div>
+    <p class="hero-intro">
+      Un SUV híbrido enchufable que combina la fuerza de un sistema de tres motores, la autonomía de un vehículo de largas distancias y la tecnología de un segmento superior. Diseñado para quienes no eligen entre rendimiento, eficiencia y aventura.
+    </p>
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span>PHEV · 380 HP · 1.000 km de autonomía</span>
     </div>
   </div>
 </section>
 
 <!-- STATS -->
 <section class="stats">
-  <div class="stats-grid reveal">
-    <div class="stat"><div class="num">380<span>HP</span></div><div class="lbl">Potencia combinada</div></div>
-    <div class="stat"><div class="num">610<span>Nm</span></div><div class="lbl">Torque combinado</div></div>
-    <div class="stat"><div class="num">1.000<span>km</span></div><div class="lbl">Autonomía combinada</div></div>
-    <div class="stat"><div class="num">100<span>km</span></div><div class="lbl">Modo 100% eléctrico (WLTC)</div></div>
-    <div class="stat"><div class="num">7,5<span>s</span></div><div class="lbl">0 a 100 km/h</div></div>
-    <div class="stat"><div class="num">30<span>kWh</span></div><div class="lbl">Batería LiFePO₄</div></div>
-    <div class="stat"><div class="num">15,6<span>"</span></div><div class="lbl">Pantalla táctil LCD</div></div>
-    <div class="stat"><div class="num">8<span>+</span></div><div class="lbl">Airbags + ADAS de serie</div></div>
-  </div>
-</section>
-
-<!-- PRESENTACIÓN -->
-<section class="section white present">
-  <div class="wrap">
-    <div class="kicker reveal">La nueva era híbrida</div>
-    <h2 class="h2 reveal">Un viajero incansable con alma de aventurero</h2>
-    <p class="reveal">El <strong>Jetour T2 PHEV</strong> es el SUV híbrido enchufable pensado para quienes se niegan a elegir entre potencia, eficiencia y capacidad de aventura. Llegó al mercado ecuatoriano para redefinir lo que se puede esperar de un vehículo de su categoría, con una propuesta honesta: <strong>una única versión, absolutamente equipada de serie</strong>.</p>
-    <p class="reveal">Está dirigido a familias que buscan espacio y protección real, a profesionales que devoran kilómetros cada semana, a los apasionados por la tecnología y a quienes, de vez en cuando, sienten el llamado de salir del asfalto. Para todos ellos, el T2 PHEV responde con una experiencia propia de vehículos de gama muy superior.</p>
-    <p class="reveal">Tres fortalezas definen su carácter y lo hacen único en su segmento:</p>
-    <div class="strengths">
-      <div class="strength reveal"><div class="ico">🔥</div><div><h3>Potencia sin complejos</h3><p>Respuesta inmediata y carácter deportivo cuando lo pides, sin renunciar a la eficiencia del día a día.</p></div></div>
-      <div class="strength reveal"><div class="ico">🌎</div><div><h3>Libertad para ir lejos</h3><p>Rutas largas sin depender de cargadores y trayectos urbanos diarios en modo totalmente eléctrico.</p></div></div>
-      <div class="strength reveal"><div class="ico">🛡️</div><div><h3>Tecnología que cuida</h3><p>Un entorno de asistentes, confort y conectividad diseñado para protegerte y consentirte en cada viaje.</p></div></div>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-label">Segmento</div>
+        <div class="stat-value small">SUV D</div>
+        <div class="stat-sub">Segmento familiar premium</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Carrocería</div>
+        <div class="stat-value small">SUV 5 Plazas</div>
+        <div class="stat-sub">Tipo todocamino</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Plazas</div>
+        <div class="stat-value">5</div>
+        <div class="stat-sub">Configuración familiar</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">Garantía</div>
+        <div class="stat-value">10<span class="unit">años</span></div>
+        <div class="stat-sub">o 120.000 km</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- DETALLES QUE MARCAN LA DIFERENCIA -->
-<section class="section dark" id="detalles">
-  <div class="wrap">
-    <div class="kicker reveal">Datos curiosos</div>
-    <h2 class="h2 reveal">Detalles que marcan la diferencia</h2>
-    <p class="lead reveal">Nueve razones por las que el T2 PHEV sorprende incluso a quienes ya lo saben todo sobre SUVs.</p>
-    <div class="cur-grid">
-      <article class="cur-card reveal"><div class="cur-ico">🏆</div><h3>Más torque que un Cayenne</h3><p>Sus 610 Nm de torque combinado superan los 550 Nm que entrega un Porsche Cayenne V6. Fuerza de sobra para rebasar, subir pendientes y responder al instante.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">🔋</div><h3>La batería de los buses eléctricos</h3><p>Su batería LiFePO₄ usa la misma química de buses y camiones eléctricos que recorren millones de kilómetros: más estable, más duradera y sin riesgo de incendio ante impactos.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">🛣️</div><h3>Quito → Guayaquil, ida y vuelta</h3><p>Con 1.000 km de autonomía combinada puedes viajar de Quito a Guayaquil y regresar sin pasar por un cargador ni por una gasolinera.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">🎬</div><h3>Un cine sobre ruedas</h3><p>Pantalla de 15,6" —más grande que la de la mayoría de laptops— y sonido Sony con 12 parlantes y subwoofer. Cada viaje es una función privada.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">👀</div><h3>Visión debajo del auto</h3><p>La cámara 540° con chasis transparente muestra exactamente qué hay bajo las ruedas. Tecnología que hasta hace poco solo existía en todoterrenos de lujo.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">🏔️</div><h3>ADN todoterreno de verdad</h3><p>Ángulo de ataque de 39°, de salida de 33° y capacidad de vadeo de 700 mm: cifras que rivalizan con todoterrenos puros, no con SUVs de apariencia.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">💨</div><h3>0 a 100 en 7,5 segundos</h3><p>Más rápido que el 90 % de los SUV de su categoría. La fuerza de tres motores trabajando en sinergia se siente en cada aceleración.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">🗣️</div><h3>«¡Hola Jetour!» y listo</h3><p>Basta decir el comando de voz en español para controlar funciones del vehículo sin despegar las manos del volante ni la vista del camino.</p></article>
-      <article class="cur-card reveal"><div class="cur-ico">✨</div><h3>Traveller de nacimiento</h3><p>En su mercado de origen se llama Jetour Traveller, un nombre que resume su espíritu viajero. Su diseño fue dirigido por un reconocido diseñador con trayectoria en marcas europeas.</p></article>
+<!-- PRESENTACIÓN -->
+<section class="presentation" id="presentacion">
+  <div class="container">
+    <div class="section-eyebrow">Presentación</div>
+    <h2 class="section-title">Un SUV que redefine lo que un híbrido enchufable puede ofrecer.</h2>
+    <div class="presentation-grid">
+      <div>
+        <p>
+          El <strong>Jetour T2 PHEV</strong> se posiciona como un SUV familiar de segmento D con vocación aventurera y tecnología de propulsión híbrida enchufable de última generación. Combina un diseño robusto de inspiración todoterreno con una arquitectura mecánica de tres motores — uno térmico turbo y dos eléctricos — que entregan una potencia combinada de 380 HP y 610 Nm de torque.
+        </p>
+        <p>
+          Concebido para quienes buscan un vehículo capaz de desenvolverse con soltura tanto en el tráfico urbano como en rutas de montaña, el T2 PHEV integra una batería de fosfato de hierro y litio (LiFePO4) de 30 kWh, una transmisión dedicada híbrida (DHT) de tres velocidades y un equipamiento de seguridad, confort y conectividad propio de vehículos de segmentos superiores.
+        </p>
+      </div>
+      <aside class="presentation-aside">
+        Tres fortalezas definen su carácter: una autonomía combinada de 1.000 km que elimina cualquier límite, un sistema de asistencia a la conducción (ADAS) de clase premium y una capacidad de vadeo y ángulos de ataque que lo acreditan como un verdadero todoterreno.
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO VERSIÓN -->
+<section class="version-intro">
+  <div class="container">
+    <div class="version-intro-inner">
+      <div class="version-sub">Versión única disponible</div>
+      <h3>Jetour T2 PHEV</h3>
+      <p>
+        La configuración del T2 PHEV comercializada concentra todo el equipamiento en una única versión full-equip, eliminando la complejidad de elección entre acabados. El sistema de propulsión integra un motor 1.5L turbo de 160 HP y 220 Nm con dos motores eléctricos de 100 HP y 120 HP, gestionados por una transmisión DHT (Dedicated Hybrid Transmission) de tres velocidades diseñada específicamente para maximizar la sinergia entre ambas fuentes de energía.
+      </p>
+      <p>
+        La batería LiFePO4 de 30 kWh permite una autonomía 100% eléctrica de hasta 100 km WLTC, suficiente para la mayoría de los trayectos diarios, mientras que el conjunto con el motor térmico alcanza una autonomía combinada de 1.000 km. La tracción es delantera (FWD) y ofrece seis modos de conducción: Sports, Economy, Standard, Snow, EV y HEV.
+      </p>
+      <div class="version-specs-mini">
+        <div class="vsm-item">
+          <div class="vsm-val">380<span class="u">HP</span></div>
+          <div class="vsm-lbl">Potencia combinada</div>
+        </div>
+        <div class="vsm-item">
+          <div class="vsm-val">610<span class="u">Nm</span></div>
+          <div class="vsm-lbl">Torque combinado</div>
+        </div>
+        <div class="vsm-item">
+          <div class="vsm-val">7.5<span class="u">s</span></div>
+          <div class="vsm-lbl">0 a 100 km/h</div>
+        </div>
+        <div class="vsm-item">
+          <div class="vsm-val">1.000<span class="u">km</span></div>
+          <div class="vsm-lbl">Autonomía combinada</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETALLES -->
+<section class="details" id="detalles">
+  <div class="container">
+    <div class="section-eyebrow">Detalles que marcan la diferencia</div>
+    <h2 class="section-title" style="color:#fff">Lo que ningún otro SUV de su segmento ofrece de serie.</h2>
+    <div class="details-grid">
+
+      <div class="detail-card">
+        <div class="detail-icon">⚡</div>
+        <h3>Más torque que un deportivo premium</h3>
+        <p>Con <span class="highlight">610 Nm de torque combinado</span>, el T2 PHEV supera las cifras de torque de SUV premium de segmentos muy superiores. Los tres motores trabajan en sinergia para entregar una aceleración de 0 a 100 km/h en 7.5 segundos.</p>
+        <p>Una respuesta inmediata, sin turbo lag ni esperas, disponible desde el primer metro.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">🔋</div>
+        <h3>Batería LiFePO4 de grado industrial</h3>
+        <p>La química de <span class="highlight">fosfato de hierro y litio</span> es la misma utilizada en autobuses y camiones eléctricos por su estabilidad térmica y su vida útil extendida. Soporta más ciclos de carga, no presenta riesgo de fuga térmica y está diseñada para durar más que el propio vehículo.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">🛡️</div>
+        <h3>ADAS completo de serie</h3>
+        <p>Frenado autónomo de emergencia (AEB), crucero adaptativo (ACC), advertencia de cambio de carril (LDW), monitor de punto ciego (BSD), alerta de apertura de puertas (DOW), control de estabilidad (ESC) y sistema antivuelco (ROPS). <span class="highlight">Ocho airbags</span> y un copiloto electrónico que actúa antes de que el conductor reaccione.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">🎥</div>
+        <h3>Cámara 540° con chasis transparente</h3>
+        <p>Una tecnología que hasta hace pocos años solo existía en vehículos de segmentos muy superiores permite ver no solo el entorno en 360°, sino también <span class="highlight">el suelo bajo el vehículo</span>. Ideal para maniobras urbanas, off-road y cruces de terrenos irregulares.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">🎧</div>
+        <h3>Cine sobre ruedas: Sony 12+1</h3>
+        <p>Sistema de audio firmado por <span class="highlight">Sony con 12 parlantes más subwoofer</span>, combinado con una pantalla táctil LCD de 15.6 pulgadas — más grande que la de muchos televisores domésticos — y un panel digital de instrumentos de 10.25" totalmente configurable.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">🏔️</div>
+        <h3>Credenciales todoterreno reales</h3>
+        <p>Ángulo de ataque de 39°, ángulo de salida de 33°, ángulo ventral de 25°, altura al suelo de 205 mm y <span class="highlight">capacidad de vadeo de 700 mm</span>. Cifras que rivalizan con SUV todoterreno puros, en un vehículo confortable para el día a día.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">💺</div>
+        <h3>Confort de clase ejecutiva</h3>
+        <p>Asientos de cuero con <span class="highlight">calefacción, ventilación y memoria de tres posiciones</span> para conductor y copiloto. Climatizador bizona, sunroof panorámico de serie y llave inteligente con manos libres. El equipamiento de un vehículo de lujo, sin el precio de un vehículo de lujo.</p>
+      </div>
+
+      <div class="detail-card">
+        <div class="detail-icon">⛽</div>
+        <h3>1.000 km sin detenerse</h3>
+        <p>Hasta <span class="highlight">100 km en modo 100% eléctrico</span> para la rutina diaria y más de 900 km adicionales con el motor térmico. El T2 PHEV elimina la ansiedad por autonomía y permite viajar sin planificar escalas de recarga.</p>
+      </div>
+
     </div>
   </div>
 </section>
 
 <!-- CARACTERÍSTICAS -->
-<section class="section light" id="caracteristicas">
-  <div class="wrap">
-    <div class="kicker reveal">Ficha técnica en detalle</div>
-    <h2 class="h2 reveal">Características del Jetour T2 PHEV</h2>
-    <p class="lead reveal">Versión única para Ecuador: cada apartado llega completo de serie. Abre cada categoría y descubre cómo se traduce la tecnología en beneficios reales.</p>
-
-    <div class="acc">
-
-      <!-- 1. EXTERIOR -->
-      <div class="acc-item reveal">
-        <button class="acc-head" aria-expanded="false">
-          <span class="ah-left"><span class="ah-emoji">🚘</span> Diseño exterior y presencia</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note"><strong>Frente y lateral.</strong> El T2 PHEV no aparenta ser aventurero: lo es. Su diseño, de líneas robustas y proporcionadas, fue desarrollado bajo la dirección de un diseñador con trayectoria en marcas europeas.</p>
-            <div class="feat-pro">
-              <h3>Geometría todoterreno real</h3>
-              <p class="row"><b>El reto:</b> muchos SUV lucen aventureros, pero se quedan cortos cuando el camino se pone difícil.</p>
-              <p class="row"><b>La solución:</b> ángulo de ataque de 39°, ángulo de salida de 33°, ángulo ventral de 25°, altura al suelo de 205 mm y capacidad de vadeo de hasta 700 mm.</p>
-              <p class="row mean">Esto significa que… puedes cruzar quebradas, caminos inundados y pendientes pronunciadas con la tranquilidad de un todoterreno auténtico.</p>
-            </div>
-            <div class="feat-grid">
-              <div class="feat"><div class="f-ico">📏</div><h3>Dimensiones de categoría superior</h3><p>4.785 mm de largo, 2.006 mm de ancho, 1.880 mm de alto y 2.800 mm entre ejes: supera en tamaño a muchos SUV del segmento y se traduce en presencia y habitabilidad.</p></div>
-              <div class="feat"><div class="f-ico">🛞</div><h3>Ruedas de 20 pulgadas</h3><p>Neumáticos 255/55 R20: el equilibrio perfecto entre agarre, confort y estética imponente.</p></div>
-              <div class="feat"><div class="f-ico">💡</div><h3>Firma luminosa full LED</h3><p>Luces principales LED con ajuste, neblineros LED y luz diurna LED para ver y ser visto en cualquier condición de la sierra o la costa.</p></div>
-              <div class="feat"><div class="f-ico">🪞</div><h3>Espejos abatibles con desempañador</h3><p>Visibilidad garantizada en lluvia y páramo, con plegado práctico para espacios reducidos.</p></div>
-              <div class="feat"><div class="f-ico">✍️</div><h3>Diseño con sello internacional</h3><p>En su mercado de origen se comercializa como Jetour Traveller, haciendo honor a su espíritu viajero y aventurero.</p></div>
-              <div class="feat"><div class="f-ico">🎨</div><h3>Cuatro colores disponibles</h3>
-                <div class="colors" style="margin-top:10px">
-                  <span class="color"><span class="swatch sw-blanco"></span>Blanco</span>
-                  <span class="color"><span class="swatch sw-plata"></span>Plata nieve</span>
-                  <span class="color"><span class="swatch sw-negro"></span>Negro noche</span>
-                  <span class="color"><span class="swatch sw-cian"></span>Cian neblina</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 2. INTERIOR -->
-      <div class="acc-item reveal">
-        <button class="acc-head" aria-expanded="false">
-          <span class="ah-left"><span class="ah-emoji">🛋️</span> Cabina interior y confort</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note"><strong>Confort de clase ejecutiva.</strong> La cabina del T2 PHEV fue pensada para que cada trayecto —del colegio a la oficina o de Quito a la playa— se sienta como primera clase.</p>
-            <div class="feat-pro">
-              <h3>Asientos con climatización y memoria</h3>
-              <p class="row"><b>El reto:</b> en climas como la sierra ecuatoriana, los asientos fríos de mañana y calientes de mediodía arruinan cualquier viaje.</p>
-              <p class="row"><b>La solución:</b> asientos de cuero con calefacción y ventilación, ajuste eléctrico de 6 vías para el conductor y 4 vías para el copiloto, más memoria de 3 posiciones.</p>
-              <p class="row mean">Esto significa que… en invierno tienes asiento calentito, en verano asiento refrigerado, y si compartes el auto, con un botón recuperas tu posición perfecta.</p>
-            </div>
-            <div class="feat-grid">
-              <div class="feat"><div class="f-ico">🌅</div><h3>Sunroof panorámico de serie</h3><p>Ilumina todo el habitáculo y hace que el espacio se sienta aún más amplio, en cada fila de asientos.</p></div>
-              <div class="feat"><div class="f-ico">🖥️</div><h3>Panel digital de 10,25"</h3><p>Tablero de instrumentos LCD totalmente configurable, con la información que tú decides ver.</p></div>
-              <div class="feat"><div class="f-ico">🌡️</div><h3>Climatizador bizona</h3><p>Temperatura independiente para conductor y acompañante: cada quien viaja a su gusto.</p></div>
-              <div class="feat"><div class="f-ico">🔑</div><h3>Llave inteligente manos libres</h3><p>Acceso sin sacar la llave del bolsillo y encendido por botón, para subir y arrancar al instante.</p></div>
-              <div class="feat"><div class="f-ico">🪟</div><h3>Vidrios ONE KEY LIFT</h3><p>Cuatro vidrios eléctricos con subida de un solo toque, cómodos y seguros para toda la familia.</p></div>
-              <div class="feat"><div class="f-ico">🧳</div><h3>Maletero de 580 a 1.494 litros</h3><p>580 L con 5 plazas —suficiente para maletas de toda la familia— y hasta 1.494 L abatiendo la segunda fila.</p></div>
-              <div class="feat"><div class="f-ico">🎚️</div><h3>Volante de cuero multifunción</h3><p>Controles al alcance de los pulgares para audio, llamadas y asistencias, sin soltar el volante.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. SEGURIDAD -->
-      <div class="acc-item reveal">
-        <button class="acc-head" aria-expanded="false">
-          <span class="ah-left"><span class="ah-emoji">🛡️</span> Seguridad y asistencias ADAS</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <p class="acc-note"><strong>Seguridad de clase premium.</strong> Mientras otros recortan, el T2 PHEV equipa de serie un paquete completo de protección activa y pasiva. Incluye sensores de parqueo delanteros y traseros.</p>
-            <div class="feat-pro">
-              <h3>8 airbags + un copiloto electrónico</h3>
-              <p class="row"><b>El reto:</b> muchos SUV "económicos" recortan precisamente donde no se debería: la seguridad.</p>
-              <p class="row"><b>La solución:</b> 8 airbags (frontales, laterales y de cortina) más un paquete ADAS completo: el vehículo frena solo si detecta peligro, te avisa si te sales del carril y te alerta antes de abrir la puerta si viene una bicicleta.</p>
-              <p class="row mean">Esto significa que… tienes un ángel de la guarda electrónico que trabaja en cada kilómetro, de serie y sin paquetes adicionales.</p>
-            </div>
-            <h3 class="sub-title">ADAS, sigla por sigla</h3>
-            <p class="acc-note">ADAS (<em>Advanced Driver Assistance Systems</em>): sistemas avanzados de asistencia al conductor que vigilan el entorno por ti.</p>
-            <div class="sig-grid">
-              <div class="sig"><b>ABS</b><span class="full">Sistema de frenos antibloqueo</span><p>Evita que las ruedas se bloqueen al frenar de emergencia, permitiéndote maniobrar mientras frenas.</p></div>
-              <div class="sig"><b>EBD</b><span class="full">Distribución electrónica de frenado</span><p>Reparte la fuerza de frenado entre ejes según la carga del vehículo, logrando frenadas más parejas.</p></div>
-              <div class="sig"><b>ESC</b><span class="full">Control dinámico de estabilidad</span><p>Detecta derrapes y frena ruedas individuales para recuperar la trayectoria, por ejemplo en una curva tomada rápido.</p></div>
-              <div class="sig"><b>ASC</b><span class="full">Control automático de estabilidad</span><p>Mantiene el vehículo estable sobre superficies deslizantes, como asfalto mojado de páramo.</p></div>
-              <div class="sig"><b>CBC</b><span class="full">Control de frenado en curvas</span><p>Estabiliza el vehículo si necesitas frenar dentro de una curva, evitando desbalances.</p></div>
-              <div class="sig"><b>AEB</b><span class="full">Frenado autónomo de emergencia</span><p>Si detecta una colisión inminente y no reaccionas, el vehículo frena por sí solo.</p></div>
-              <div class="sig"><b>ACC</b><span class="full">Control de crucero adaptativo</span><p>Mantiene tu velocidad y ajusta automáticamente la distancia con el vehículo de adelante. Ideal en carretera.</p></div>
-              <div class="sig"><b>FOW</b><span class="full">Advertencia de colisión frontal</span><p>Te avisa con anticipación si el vehículo de adelante frena de golpe.</p></div>
-              <div class="sig"><b>RCW</b><span class="full">Advertencia de colisión trasera</span><p>Prepara al vehículo si detecta un impacto posterior inminente.</p></div>
-              <div class="sig"><b>LDW</b><span class="full">Advertencia de cambio de carril</span><p>Te avisa si te sales del carril sin señalizar, por ejemplo por fatiga en viajes largos.</p></div>
-              <div class="sig"><b>DOW</b><span class="full">Advertencia de apertura de puerta</span><p>Te alerta antes de abrir la puerta si se acerca una bicicleta u otro vehículo.</p></div>
-              <div class="sig"><b>BSD</b><span class="full">Monitor de punto ciego</span><p>Detecta vehículos en tu punto ciego y te alerta al cambiar de carril.</p></div>
-              <div class="sig"><b>HSA</b><span class="full">Asistente de arranque en pendiente</span><p>Mantiene el freno unos segundos para arrancar en subida sin retroceder, como en los parqueaderos de la sierra.</p></div>
-              <div class="sig"><b>HDC</b><span class="full">Control de descenso en pendiente</span><p>Baja pendientes pronunciadas a velocidad controlada sin que toques el freno.</p></div>
-              <div class="sig"><b>ROPS</b><span class="full">Sistema antivuelco</span><p>Detecta el riesgo de volcadura y activa medidas de protección para los ocupantes.</p></div>
-              <div class="sig"><b>TPMS</b><span class="full">Sensor de presión de neumáticos</span><p>Alerta en el tablero si una llanta pierde presión, antes de que se convierta en problema.</p></div>
-              <div class="sig"><b>EPB</b><span class="full">Freno de estacionamiento electrónico</span><p>Se activa con un botón, sin palanca mecánica, liberando espacio en la consola central.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. MOTOR -->
-      <div class="acc-item reveal">
-        <button class="acc-head" aria-expanded="false">
-          <span class="ah-left"><span class="ah-emoji">⚙️</span> Motor híbrido, transmisión y suspensión</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <div class="feat-pro">
-              <h3>Tres motores trabajando en sinergia</h3>
-              <p class="row"><b>El reto:</b> los SUV híbridos suelen sacrificar potencia en nombre de la eficiencia.</p>
-              <p class="row"><b>La solución:</b> un motor 1.5L Turbo de 160 HP y 220 Nm más dos motores eléctricos síncronos de imanes permanentes (100 HP y 120 HP), para una potencia combinada de <strong>380 HP y 610 Nm de torque</strong>.</p>
-              <p class="row mean">Esto significa que… tienes la fuerza de un tractor con la agilidad de un deportivo: tres vehículos en uno —eléctrico urbano, híbrido eficiente y deportivo cuando lo necesitas—.</p>
-            </div>
-            <div class="feat-pro">
-              <h3>Transmisión DHT de 3 velocidades</h3>
-              <p class="row"><b>El reto:</b> las transmisiones híbridas convencionales suelen ser ruidosas e ineficientes.</p>
-              <p class="row"><b>La solución:</b> la DHT (<em>Dedicated Hybrid Transmission</em>) no es una caja automática adaptada: fue diseñada desde cero para que el motor térmico y los eléctricos trabajen como un equipo de alta performance, gestionando de forma inteligente cada fuente de energía.</p>
-              <p class="row mean">Esto significa que… conducción suave, sin tirones, y el mejor consumo posible en cada situación: ciudad, subida o autopista.</p>
-            </div>
-            <div class="feat-grid">
-              <div class="feat"><div class="f-ico">💨</div><h3>Rendimiento verificado</h3><p>Aceleración de 0 a 100 km/h en 7,5 segundos y velocidad máxima de 190 km/h.</p></div>
-              <div class="feat"><div class="f-ico">🛞</div><h3>Tracción FWD</h3><p>Tracción delantera optimizada para eficiencia, con electrónica que gestiona el agarre en cada situación.</p></div>
-              <div class="feat"><div class="f-ico">🛠️</div><h3>Suspensión independiente</h3><p>MacPherson independiente adelante y Multi-Link independiente atrás, con 205 mm de altura al suelo: cómodo en el tráfico, estable en carretera y capaz fuera del asfalto.</p></div>
-              <div class="feat"><div class="f-ico">🔁</div><h3>Regeneración de energía</h3><p>Sistema de regeneración ajustable en 2 niveles que recupera energía al frenar y recarga la batería en marcha.</p></div>
-            </div>
-            <h3 class="sub-title">Seis modos de manejo</h3>
-            <div class="chips">
-              <span class="chip dark">SPORTS</span>
-              <span class="chip dark">ECONOMY</span>
-              <span class="chip dark">STANDARD</span>
-              <span class="chip dark">SNOW</span>
-              <span class="chip dark">EV</span>
-              <span class="chip dark">HEV</span>
-            </div>
-            <p class="acc-note">Desde conducción 100 % eléctrica hasta superficies deslizantes: el T2 PHEV adapta su carácter al camino y a tu estilo.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. CARGA Y AUTONOMÍA -->
-      <div class="acc-item reveal">
-        <button class="acc-head" aria-expanded="false">
-          <span class="ah-left"><span class="ah-emoji">🔋</span> Carga y autonomía</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <div class="feat-pro">
-              <h3>1.000 km sin ansiedad</h3>
-              <p class="row"><b>El reto:</b> la ansiedad por autonomía es el principal freno para comprar un híbrido enchufable.</p>
-              <p class="row"><b>La solución:</b> batería LiFePO₄ de 30 kWh, motor térmico eficiente y tanque de gran capacidad, que juntos entregan <strong>1.000 km de autonomía combinada</strong>.</p>
-              <p class="row mean">Esto significa que… puedes olvidarte de los cargadores en carretera: viaja de Quito a Guayaquil y vuelve sin escalas ni preocupaciones.</p>
-            </div>
-            <div class="feat-grid">
-              <div class="feat"><div class="f-ico">🔌</div><h3>100 km en modo 100 % eléctrico</h3><p>Autonomía eléctrica WLTC de 100 km (139 km en ciclo NEDC): suficiente para la rutina diaria sin gastar una gota de gasolina.</p></div>
-              <div class="feat"><div class="f-ico">🔋</div><h3>Batería LiFePO₄ de 30 kWh</h3><p>Químicamente más estable, soporta más ciclos de carga y es la misma química que usan buses y camiones eléctricos de alto kilometraje.</p></div>
-              <div class="feat"><div class="f-ico">⚡</div><h3>Carga rápida</h3><p>Del 30 % al 80 % en solo 30 minutos en corriente rápida. Incluye cargador portátil de viaje para cualquier toma de corriente.</p></div>
-              <div class="feat"><div class="f-ico">⛽</div><h3>Consumos de referencia</h3><p>0,8 L/100 km en modo híbrido, 5,4 L/100 km en modo térmico y 19,9 kWh/100 km en modo eléctrico: eficiencia real para un SUV de gran porte.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 6. CONECTIVIDAD -->
-      <div class="acc-item reveal">
-        <button class="acc-head" aria-expanded="false">
-          <span class="ah-left"><span class="ah-emoji">📱</span> Conectividad y tecnología</span>
-          <span class="acc-arrow">▼</span>
-        </button>
-        <div class="acc-body">
-          <div class="acc-inner">
-            <div class="feat-pro">
-              <h3>Un cine sobre ruedas</h3>
-              <p class="row"><b>El reto:</b> las pantallas de los SUV de este segmento suelen ser pequeñas y lentas.</p>
-              <p class="row"><b>La solución:</b> panel LCD de 15,6" —más grande que la pantalla de la mayoría de laptops— y sistema de sonido firmado por Sony con 12 parlantes y subwoofer.</p>
-              <p class="row mean">Esto significa que… tienes el equipamiento multimedia propio de vehículos de lujo, con una pantalla gigante para navegación y entretenimiento, y un sonido que te envuelve como en una sala de cine.</p>
-            </div>
-            <div class="feat-grid">
-              <div class="feat"><div class="f-ico">📲</div><h3>Apple CarPlay y Android Auto</h3><p>Conexión inalámbrica para tus aplicaciones favoritas, más radio AM/FM y Bluetooth.</p></div>
-              <div class="feat"><div class="f-ico">🗣️</div><h3>«HOLA JETOUR»</h3><p>Control por voz en español: di el comando y controla funciones del vehículo sin distracciones.</p></div>
-              <div class="feat"><div class="f-ico">📷</div><h3>Cámara 540° HD</h3><p>Visión 360° del entorno más vista "transparente" del suelo bajo el vehículo: ideal para maniobrar, parquear y hacer off-road sin sorpresas.</p></div>
-              <div class="feat"><div class="f-ico">🔋</div><h3>Cargador inalámbrico</h3><p>Apoya tu teléfono y cárgalo sin cables, siempre a la mano en la consola central.</p></div>
-              <div class="feat"><div class="f-ico">🔌</div><h3>Energía para todos</h3><p>4 puertos USB (tipo A y C) y 2 tomacorrientes de 12V / 180W para dispositivos de toda la familia.</p></div>
-              <div class="feat"><div class="f-ico">🌧️</div><h3>Detalles inteligentes</h3><p>Limpia parabrisas automático y función Auto Hold: el auto se encarga de lo routine mientras tú conduces.</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- RESUMEN TÉCNICO -->
-    <h3 class="sub-title reveal" style="margin-top:44px">Resumen técnico</h3>
-    <div class="table-wrap reveal" style="margin-top:16px">
-      <table>
-        <thead><tr><th>Característica</th><th>Jetour T2 PHEV</th></tr></thead>
-        <tbody>
-          <tr><td>Sistema de propulsión</td><td>Híbrido enchufable (PHEV)</td></tr>
-          <tr><td>Motor de combustión</td><td>1.5L Turbo · 160 HP / 220 Nm</td></tr>
-          <tr><td>Motores eléctricos</td><td>100 HP + 120 HP</td></tr>
-          <tr><td>Potencia / torque combinado</td><td><span class="red">380 HP / 610 Nm</span></td></tr>
-          <tr><td>Batería</td><td>LiFePO₄ · 30 kWh</td></tr>
-          <tr><td>Transmisión / Tracción</td><td>DHT 3 velocidades · FWD</td></tr>
-          <tr><td>Autonomía combinada</td><td><span class="red">1.000 km</span></td></tr>
-          <tr><td>Autonomía eléctrica</td><td>100 km WLTC (139 km NEDC)</td></tr>
-          <tr><td>Aceleración 0–100 km/h</td><td>7,5 s</td></tr>
-          <tr><td>Pantalla / Sonido</td><td>15,6" LCD · Sony 12+1</td></tr>
-          <tr><td>Airbags</td><td>8</td></tr>
-          <tr><td>Dimensiones (largo / ancho / alto / ejes)</td><td>4.785 / 2.006 / 1.880 / 2.800 mm</td></tr>
-          <tr><td>Garantía</td><td><span class="red">10 años o 120.000 km</span></td></tr>
-        </tbody>
-      </table>
-    </div>
+<section class="features" id="caracteristicas">
+  <div class="container">
+    <div class="section-eyebrow">Características técnicas</div>
+    <h2 class="section-title">Cada detalle, explicado.</h2>
+    <div class="acc-group" id="accGroup"></div>
   </div>
 </section>
 
 <!-- PERFILES -->
-<section class="section white" id="perfiles">
-  <div class="wrap">
-    <div class="kicker reveal">Encuentra tu lugar</div>
-    <h2 class="h2 reveal">¿Para quién es este vehículo?</h2>
-    <p class="lead reveal">El T2 PHEV es una versión única con todo de serie, pero se adapta a muchas formas de vivir. ¿Con cuál te identificas?</p>
-    <div class="prof-grid">
-      <article class="prof reveal">
-        <div class="prof-ico">👨‍👩‍👧‍👦</div>
-        <span class="prof-tag">Familias</span>
+<section class="profiles">
+  <div class="container">
+    <div class="section-eyebrow">Perfil ideal</div>
+    <h2 class="section-title" style="color:#fff">Para quién está pensado el T2 PHEV.</h2>
+    <div class="profiles-grid">
+
+      <div class="profile-card">
+        <div class="p-icon">👨‍👩‍👧‍👦</div>
         <h3>La familia aventurera</h3>
-        <p>Un vehículo espacioso para el día a día, con seguridad de primer nivel y capacidad para escapadas de fin de semana.</p>
+        <p class="p-need">Un vehículo espacioso para viajes familiares, con seguridad de primer nivel y capacidad real para escapadas fuera del asfalto.</p>
         <ul>
-          <li>5 plazas amplias y maletero de hasta 1.494 L</li>
-          <li>8 airbags y paquete ADAS completo</li>
-          <li>Modo EV para las rutas diarias al colegio y el trabajo</li>
+          <li>Cinco plazas amplias con distancia entre ejes de 2.800 mm y maletero de 580 a 1.494 litros.</li>
+          <li>Ocho airbags y ADAS completo que protegen a cada ocupante.</li>
+          <li>Modo EV para los trayectos diarios al colegio o al trabajo sin consumir combustible.</li>
         </ul>
-      </article>
-      <article class="prof reveal">
-        <div class="prof-ico">💼</div>
-        <span class="prof-tag">Profesionales</span>
+      </div>
+
+      <div class="profile-card">
+        <div class="p-icon">💼</div>
         <h3>El profesional viajero</h3>
-        <p>Comodidad para largos trayectos, eficiencia real y una presencia imponente que proyecta éxito.</p>
+        <p class="p-need">Confort para largos trayectos, eficiencia de consumo y una presencia que proyecte éxito sin estridencias.</p>
         <ul>
-          <li>1.000 km de autonomía sin escalas</li>
-          <li>Asientos con memoria, calefacción y ventilación</li>
-          <li>Sistema Sony de alta fidelidad</li>
+          <li>Autonomía combinada de 1.000 km para viajes largos sin escalas.</li>
+          <li>Asientos climatizados con memoria, sistema Sony 12+1 y sunroof panorámico.</li>
+          <li>Consumo combinado de apenas 5.4 L/100 km en modo térmico.</li>
         </ul>
-      </article>
-      <article class="prof reveal">
-        <div class="prof-ico">📲</div>
-        <span class="prof-tag">Tech</span>
+      </div>
+
+      <div class="profile-card">
+        <div class="p-icon">📱</div>
         <h3>El amante de la tecnología</h3>
-        <p>Un vehículo a la vanguardia en conectividad, asistentes y eficiencia energética.</p>
+        <p class="p-need">Un vehículo a la vanguardia en conectividad, asistentes de conducción y eficiencia energética.</p>
         <ul>
-          <li>Pantalla de 15,6" y voz en español «Hola Jetour»</li>
-          <li>Batería LiFePO₄ y transmisión DHT de última generación</li>
-          <li>Cámara 540° con chasis transparente</li>
+          <li>Pantalla de 15.6", Apple CarPlay/Android Auto inalámbrico y control por voz en español.</li>
+          <li>Cámara 540° con chasis transparente y batería LiFePO4 de última generación.</li>
+          <li>Transmisión DHT de tres velocidades, tecnología híbrida de última generación.</li>
         </ul>
-      </article>
-      <article class="prof reveal">
-        <div class="prof-ico">🏔️</div>
-        <span class="prof-tag">Off-road</span>
+      </div>
+
+      <div class="profile-card">
+        <div class="p-icon">🏕️</div>
         <h3>El off-roader ocasional</h3>
-        <p>Verdadera capacidad todoterreno sin sacrificar el confort del uso diario.</p>
+        <p class="p-need">Capacidad todoterreno real sin sacrificar el confort ni la eficiencia del día a día.</p>
         <ul>
-          <li>Ángulos de 39° / 33° y vadeo de 700 mm</li>
-          <li>Altura al suelo de 205 mm y modo SNOW</li>
-          <li>En ciudad, confort y eficiencia de híbrido</li>
+          <li>Ángulos de ataque y salida de 39°/33°, altura al suelo de 205 mm y vadeo de 700 mm.</li>
+          <li>Modos de conducción que incluyen Snow y EV para cada tipo de terreno.</li>
+          <li>Suspensión independiente MacPherson/Multi-Link que filtra imperfecciones en cualquier superficie.</li>
         </ul>
-      </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FICHA TÉCNICA -->
+<section class="tech" id="ficha">
+  <div class="container">
+    <div class="section-eyebrow">Ficha técnica</div>
+    <h2 class="section-title">Todas las especificaciones.</h2>
+    <div class="tech-wrap">
+      <div class="tech-scroll">
+        <table class="tech-table" id="techTable">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th class="active">Jetour T2 PHEV</th>
+            </tr>
+          </thead>
+          <tbody id="techBody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- RESPALDO -->
-<section class="section dark respaldo" id="respaldo">
-  <div class="wrap">
-    <div class="kicker reveal">Respaldo</div>
-    <h2 class="h2 reveal">Respaldo real en Ecuador</h2>
-    <p class="lead reveal">Comprar un Jetour es contar con una red nacional de experiencia, repuestos y servicio. Esto es lo que hay detrás de tu T2 PHEV.</p>
-
-    <div class="resp-strip reveal">
-      <div class="stat"><div class="num">+50<span>años</span></div><div class="lbl">Trayectoria Grupo Roldán</div></div>
-      <div class="stat"><div class="num">27<span></span></div><div class="lbl">Concesionarios en el país</div></div>
-      <div class="stat"><div class="num">+20.000<span></span></div><div class="lbl">Vehículos entregados</div></div>
-      <div class="stat"><div class="num">48<span>años</span></div><div class="lbl">Grupo Palacios, aliado estratégico</div></div>
-    </div>
-
-    <div class="resp-grid">
-      <article class="resp-card reveal">
-        <h3>🏢 Grupo Roldán</h3>
-        <p><b>Distribuidor exclusivo de Jetour en Ecuador.</b> Más de 50 años de trayectoria automotriz, 27 concesionarios a nivel nacional y más de 20.000 vehículos entregados, con casa matriz en Plaza Tumbaco. Su portafolio abarca desde vehículos de pasajeros hasta maquinaria pesada.</p>
-        <div class="brand-chips">
-          <span class="chip">Jetour</span><span class="chip">JAC</span><span class="chip">SANY</span><span class="chip">YTO</span><span class="chip">Karry</span><span class="chip">Textron</span><span class="chip">Zongshen</span>
+<section class="backing" id="respaldo">
+  <div class="container">
+    <div class="backing-inner">
+      <div class="section-eyebrow" style="justify-content:center">Respaldo</div>
+      <h2>Más de cinco décadas acompañando a los conductores ecuatorianos.</h2>
+      <p class="backing-sub">Una red de concesionarios que combina experiencia, cercanía y servicio posventa de referencia.</p>
+      <div class="backing-stats">
+        <div class="bs-item">
+          <div class="bs-val">+50<em> años</em></div>
+          <div class="bs-lbl">De trayectoria</div>
         </div>
-      </article>
-      <article class="resp-card reveal">
-        <h3>🤝 Grupo Palacios</h3>
-        <p><b>Distribuidor autorizado en Ambato y Latacunga.</b> Con 48 años de experiencia, es el aliado estratégico que acerca el respaldo Jetour a la sierra centro del Ecuador, con servicio cercano y de confianza.</p>
-      </article>
-      <article class="resp-card reveal">
-        <h3>🛡️ Garantía</h3>
-        <div class="gar-num">10 años</div>
-        <div class="gar-sub">o 120.000 km</div>
-        <p>Una cobertura que supera ampliamente el estándar de la industria automotriz, para que disfrutes tu T2 PHEV con total tranquilidad durante años.</p>
-      </article>
+        <div class="bs-item">
+          <div class="bs-val">27</div>
+          <div class="bs-lbl">Concesionarios</div>
+        </div>
+        <div class="bs-item">
+          <div class="bs-val">+20.000</div>
+          <div class="bs-lbl">Vehículos entregados</div>
+        </div>
+      </div>
+      <div style="font-family:var(--title);font-weight:700;font-size:1.1rem;letter-spacing:.15em;text-transform:uppercase;color:#fff;margin-bottom:20px">Grupo Roldán · Grupo Palacios</div>
+      <div class="backing-locations">
+        <span class="loc-tag">Tumbaco</span>
+        <span class="loc-tag">Ambato</span>
+        <span class="loc-tag">Latacunga</span>
+      </div>
     </div>
   </div>
 </section>
 
-</main>
-
-<!-- FOOTER -->
 <footer>
-  <div class="foot-wrap">
-    <div class="foot-top">
-      <div class="foot-brand">JETOUR <span class="model">T2 PHEV</span><small>SUV híbrido enchufable · Versión única para Ecuador · Distribuido por Grupo Roldán.</small></div>
-      <nav class="foot-links">
-        <a href="#detalles">Detalles</a>
-        <a href="#caracteristicas">Características</a>
-        <a href="#perfiles">Perfiles</a>
-        <a href="#respaldo">Respaldo</a>
-      </nav>
-    </div>
-    <p class="foot-note">© 2025 Grupo Roldán · Distribuidor exclusivo Jetour en Ecuador · Grupo Palacios (Ambato y Latacunga). La información presentada corresponde a la ficha técnica oficial del vehículo para el mercado ecuatoriano. Las especificaciones pueden variar sin previo aviso.</p>
+  <div class="container">
+    <p>Jetour <span>·</span> T2 PHEV <span>·</span> Ecuador</p>
   </div>
 </footer>
 
 <script>
-(function(){
-  var header=document.getElementById('siteHeader');
-  function onScroll(){header.classList.toggle('scrolled',window.scrollY>8)}
-  window.addEventListener('scroll',onScroll,{passive:true});
-  onScroll();
-
-  var heads=document.querySelectorAll('.acc-head');
-  heads.forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var body=btn.nextElementSibling;
-      var isOpen=btn.getAttribute('aria-expanded')==='true';
-      if(isOpen){
-        btn.setAttribute('aria-expanded','false');
-        body.style.maxHeight='0px';
-        body.classList.remove('open');
-      }else{
-        btn.setAttribute('aria-expanded','true');
-        body.classList.add('open');
-        body.style.maxHeight=body.scrollHeight+'px';
+/* ============ DATOS DE CARACTERÍSTICAS ============ */
+const featuresData = [
+  {
+    cat:'Motor y sistema híbrido',
+    items:[
+      {
+        name:'Motor 1.5L Turbo (160 HP / 220 Nm)',
+        desc:'Bloque térmico de cuatro cilindros con inyección multipunto y doble distribución variable DVVT (Doble Variable Valve Timing), que optimiza el llenado de los cilindros en todo el rango de revoluciones.',
+        problem:'Los motores atmosféricos convencionales pierden eficiencia a regímenes altos y responden con lentitud ante solicitudes bruscas de potencia, como adelantamientos o ascensos prolongados.',
+        solution:'El turboalimentador combinado con DVVT entrega 220 Nm de torque desde regímenes bajos y mantiene una curva de potencia plana, mientras la distribución variable ajusta los tiempos de válvulas según la demanda.',
+        benefit:'Esto significa que el motor térmico responde con prontitud en cualquier situación y trabaja siempre en su punto de mayor eficiencia, ya sea en ciudad o en carretera.'
+      },
+      {
+        name:'Sistema de tres motores (380 HP / 610 Nm combinados)',
+        desc:'Arquitectura PHEV que integra el motor térmico 1.5T con dos motores eléctricos síncronos de imanes permanentes de 100 HP y 120 HP, gestionados por una electrónica de potencia común.',
+        problem:'Los SUV híbridos convencionales suelen sacrificar potencia para lograr eficiencia, entregando prestaciones inferiores a las de un vehículo térmico equivalente en precio.',
+        solution:'Los tres motores trabajan en sinergia: los eléctricos aportan torque instantáneo desde cero rpm, mientras el térmico suma potencia a regímenes altos. El resultado son 380 HP y 610 Nm combinados.',
+        benefit:'Esto significa que el vehículo acelera de 0 a 100 km/h en 7.5 segundos, con una respuesta inmediata y una fuerza disponible superior a la de muchos SUV premium de segmentos superiores.'
+      },
+      {
+        name:'Batería LiFePO4 de 30 kWh',
+        desc:'Acumulador de fosfato de hierro y litio (LiFePO4), una química distinta a la de los iones de litio convencionales (NMC/NCA), con mayor estabilidad térmica y mayor número de ciclos de vida útil.',
+        problem:'Las baterías de litio tradicionales pueden sufrir degradación acelerada, sobrecalentamiento y, en casos extremos, fuga térmica ante impactos o sobrecargas.',
+        solution:'La química LiFePO4, utilizada en autobuses y camiones eléctricos por su robustez, es químicamente más estable, soporta más ciclos de carga y no presenta riesgo de incendio ante impactos.',
+        benefit:'Esto significa que la batería está diseñada para durar más que el propio vehículo, con un nivel de seguridad superior y una degradación mínima a lo largo de los años.'
+      },
+      {
+        name:'Autonomía combinada de 1.000 km',
+        desc:'Suma de la autonomía eléctrica (hasta 100 km WLTC) y la autonomía aportada por el motor térmico con su depósito de combustible, alcanzando una cifra total cercana a los 1.000 km.',
+        problem:'La ansiedad por autonomía es el principal freno para la adopción de vehículos electrificados: los conductores temen quedarse sin energía en viajes largos lejos de puntos de recarga.',
+        solution:'El sistema permite circular en modo 100% eléctrico para los trayectos diarios y, al agotarse la batería, el motor térmico toma el relevo con un consumo de apenas 5.4 L/100 km.',
+        benefit:'Esto significa que el vehículo permite realizar la rutina diaria sin consumir una gota de combustible y, para viajes largos, ofrece una autonomía comparable a la de un diésel tradicional.'
+      },
+      {
+        name:'Consumo combinado: 5.4 L/100 km (térmico) y 0.8 L/100 km (híbrido)',
+        desc:'Cifras de consumo homologadas según el modo de utilización: 5.4 L/100 km en modo térmico puro, 19.9 kWh/100 km en modo eléctrico y apenas 0.8 L/100 km en uso híbrido combinado.',
+        problem:'Los SUV de gran porte y alta potencia suelen asociarse a consumos elevados, lo que encarece el costo de operación diario.',
+        solution:'La gestión inteligente del tren motriz prioriza el modo eléctrico en ciudad y reserva el térmico para crucero eficiente en carretera, aprovechando la regeneración de energía en deceleraciones.',
+        benefit:'Esto significa que, con un uso mayoritariamente eléctrico en los trayectos diarios, el costo de operación se reduce drásticamente respecto a un SUV térmico equivalente.'
+      },
+      {
+        name:'Carga rápida: 30 al 80 % en 30 minutos',
+        desc:'El sistema admite carga rápida en corriente continua, recuperando del 30 % al 80 % de la capacidad de la batería en aproximadamente 30 minutos. Se incluye cargador portátil de viaje para cualquier toma doméstica.',
+        problem:'Los tiempos de recarga prolongados limitan la utilidad real de los vehículos electrificados en desplazamientos largos o cuando no se dispone de cargador en el domicilio.',
+        solution:'La compatibilidad con carga rápida permite recuperar la mayor parte de la autonomía en una parada breve, mientras el cargador portátil de viaje garantiza flexibilidad en cualquier situación.',
+        benefit:'Esto significa que el vehículo se adapta tanto a un uso con cargador domiciliario como a viajes largos con paradas estratégicas de recarga.'
       }
-    });
-  });
-  window.addEventListener('resize',function(){
-    document.querySelectorAll('.acc-body.open').forEach(function(b){
-      b.style.maxHeight=b.scrollHeight+'px';
-    });
-  });
+    ]
+  },
+  {
+    cat:'Transmisión',
+    items:[
+      {
+        name:'Transmisión DHT de 3 velocidades (Dedicated Hybrid Transmission)',
+        desc:'Caja de cambios diseñada específicamente para vehículos híbridos enchufables, con tres relaciones fijas que optimizan la interacción entre el motor térmico y los motores eléctricos.',
+        problem:'Las transmisiones CVT o automáticas convencionales adaptadas a híbridos suelen generar ruido monótono, pérdidas de eficiencia y respuestas poco naturales al acelerador.',
+        solution:'La DHT de tres relaciones permite al sistema seleccionar el punto de trabajo óptimo para cada fuente de energía en cada situación: modo eléctrico en ciudad, combinación de potencia en subidas y régimen eficiente en autopista.',
+        benefit:'Esto significa que la conducción es suave, sin el efecto "elástico" de las CVT, y que el consumo se optimiza en cada escenario sin sacrificar la respuesta dinámica.'
+      },
+      {
+        name:'Seis modos de conducción (Sports, Economy, Standard, Snow, EV, HEV)',
+        desc:'Selector que permite al conductor priorizar el comportamiento del vehículo según las condiciones: máximo rendimiento (Sports), máximo ahorro (Economy), equilibrio (Standard), baja adherencia (Snow), tracción 100% eléctrica (EV) o híbrida automática (HEV).',
+        problem:'Un único mapeado del motor y la transmisión no se adapta a todas las situaciones: nieve, montaña, ciudad o autopista requieren comportamientos muy distintos.',
+        solution:'Cada modo reconfigura la respuesta del acelerador, la gestión de la batería, la intervención de los controles de estabilidad y la relación de la transmisión DHT.',
+        benefit:'Esto significa que el vehículo se adapta al terreno y al estilo de conducción con solo girar un selector, sin que el conductor deba manipular ajustes técnicos.'
+      }
+    ]
+  },
+  {
+    cat:'Suspensión y chasis',
+    items:[
+      {
+        name:'Suspensión delantera MacPherson independiente',
+        desc:'Esquema de suspensión independiente tipo MacPherson con brazo inferior, barra estabilizadora y amortiguador telescópico integrado en el conjunto muelle-amortiguador.',
+        problem:'Las suspensiones de eje rígido transmiten las irregularidades de un lado al otro del vehículo, comprometiendo confort y precisión de dirección.',
+        solution:'El esquema MacPherson permite que cada rueda se mueba de forma independiente, absorbiendo baches y imperfecciones sin afectar a la rueda opuesta.',
+        benefit:'Esto significa que la dirección es precisa y el confort de marcha superior, especialmente en superficies irregulares.'
+      },
+      {
+        name:'Suspensión trasera Multi-Link independiente',
+        desc:'Esquema multilink con múltiples brazos que permiten un control preciso de la geometría de la rueda trasera en todo su recorrido.',
+        problem:'Las suspensiones traseras de barra de torsión o eje rígido comprometen el confort y la estabilidad en apoyo, especialmente en curvas o con el vehículo cargado.',
+        solution:'El multilink mantiene la rueda perpendicular al suelo en todo momento, maximizando el contacto del neumático y mejorando tanto el confort como la estabilidad.',
+        benefit:'Esto significa que el vehículo se siente firme y confortable tanto en autopista como en caminos irregulares, con un comportamiento neutro en curvas.'
+      },
+      {
+        name:'Chasis monocasco (unibody) de plataforma avanzada',
+        desc:'Estructura portante donde carrocería y chasis forman un único elemento, construida con aceros de alta resistencia para combinar rigidez torsional y bajo peso.',
+        problem:'Los chasis de largueros separados (body-on-frame) son rígidos para off-road pesado, pero penalizan peso, centro de gravedad y confort en asfalto.',
+        solution:'La estructura unibody reduce el peso total, baja el centro de gravedad y mejora la rigidez torsional, beneficiando dinámica, seguridad y eficiencia.',
+        benefit:'Esto significa que el vehículo combina una buena capacidad todoterreno con un comportamiento en asfalto propio de un turismo, algo poco habitual en SUV de vocación aventurera.'
+      },
+      {
+        name:'Altura al suelo de 205 mm y capacidad de vadeo de 700 mm',
+        desc:'Distancia libre al suelo de 205 mm, ángulo de ataque de 39°, ángulo de salida de 33°, ángulo ventral de 25° y capacidad de vadeo de hasta 700 mm.',
+        problem:'La mayoría de los SUV urbanos pierden capacidad real ante caminos en mal estado, badenes pronunciados o cruces de agua.',
+        solution:'Las cifras de ángulos y altura al suelo, combinadas con la estanqueidad de componentes críticos, permiten enfrentar obstáculos y cruces de agua sin daño mecánico.',
+        benefit:'Esto significa que el vehículo puede salir del asfalto con confianza, enfrentando terrenos que la mayoría de SUV de su segmento no podrían abordar.'
+      }
+    ]
+  },
+  {
+    cat:'Seguridad pasiva y activa',
+    items:[
+      {
+        name:'Ocho airbags (frontales, laterales y de cortina)',
+        desc:'Dotación completa de ocho bolsas de aire que cubren las plazas delanteras y traseras, incluyendo airbags laterales torso y airbags de cortina que protegen la cabeza.',
+        problem:'Muchos SUV de este rango de precio recortan en seguridad pasiva, ofreciendo solo airbags frontales y dejando desprotegidos a los ocupantes de las plazas traseras.',
+        solution:'La distribución de ocho airbags cubre todas las zonas críticas del habitáculo en caso de impacto frontal, lateral o vuelco.',
+        benefit:'Esto significa que todos los ocupantes, incluidos los de las plazas traseras, cuentan con protección integral en caso de accidente.'
+      },
+      {
+        name:'ESC (Control Electrónico de Estabilidad)',
+        desc:'Sistema que monitoriza constantemente la trayectoria real del vehículo y la compara con la intención del conductor, aplicando freno selectivo a ruedas individuales y reduciendo potencia si detecta subviraje o sobreviraje.',
+        problem:'En situaciones de emergencia, maniobras evasivas o superficies de baja adherencia, el vehículo puede perder estabilidad de forma brusca.',
+        solution:'El ESC actúa en milisegundos sobre cada rueda de forma independiente para recuperar la trayectoria deseada antes de que el conductor pueda reaccionar.',
+        benefit:'Esto significa que el vehículo ayuda activamente a evitar pérdidas de control, especialmente relevante en un SUV de centro de gravedad elevado.'
+      },
+      {
+        name:'ABS (Sistema Antibloqueo de Frenos) + EBD (Distribución Electrónica de Frenada) + CBC (Control de Frenada en Curva)',
+        desc:'El ABS evita el bloqueo de las ruedas al frenar, el EBD reparte la fuerza de frenada entre ejes según la carga, y el CBC ajusta la frenada en curvas para mantener la estabilidad.',
+        problem:'Una frenada brusca con las ruedas bloqueadas hace perder el control direccional, y una frenada en curva con reparto fijo puede provocar sobreviraje.',
+        solution:'Los tres sistemas trabajan de forma coordinada: el ABS mantiene la capacidad de giro, el EBD optimiza la distancia de frenado y el CBC estabiliza el vehículo en curvas.',
+        benefit:'Esto significa que el vehículo frena de forma estable y controlada en cualquier situación, conservando la capacidad de maniobrar incluso en frenadas de emergencia.'
+      },
+      {
+        name:'HSA (Asistente de Arranque en Pendiente) + HDC (Control de Descenso)',
+        desc:'El HSA mantiene el vehículo frenado unos segundos al soltar el freno en una rampa, evitando retrocesos. El HDC controla automáticamente la velocidad en descensos pronunciados, actuando sobre frenos y motor.',
+        problem:'Arrancar en rampas pronunciadas puede provocar retrocesos peligrosos, y los descensos empinados exigen un uso intensivo del freno que puede sobrecalentarlo.',
+        solution:'El HSA retiene el vehículo el tiempo necesario para pasar del freno al acelerador, y el HDC mantiene una velocidad constante y segura sin que el conductor pise el freno.',
+        benefit:'Esto significa que las salidas en rampa y los descensos pronunciados se realizan con total seguridad y sin fatiga para el conductor o los frenos.'
+      },
+      {
+        name:'ROPS (Sistema Antivuelco) + TPMS (Sensor de Presión de Neumáticos)',
+        desc:'El ROPS detecta condiciones de riesgo de vuelco y activa medidas preventivas (frenado selectivo, reducción de potencia). El TPMS monitoriza la presión de cada neumático y alerta al conductor en el tablero.',
+        problem:'Los SUV, por su altura y centro de gravedad, son más susceptibles a situaciones de vuelco en maniobras bruscas. La pérdida de presión en un neumático puede pasar desapercibida hasta provocar un reventón.',
+        solution:'El ROPS actúa antes de que se produzca el vuelco, y el TPMS avisa en tiempo real de cualquier pérdida de presión anormal.',
+        benefit:'Esto significa que el vehículo previene activamente situaciones de vuelco y alerta de problemas en los neumáticos antes de que se conviertan en un peligro.'
+      }
+    ]
+  },
+  {
+    cat:'ADAS (Sistemas Avanzados de Asistencia a la Conducción)',
+    items:[
+      {
+        name:'AEB (Frenado Autónomo de Emergencia) + FOW (Advertencia de Colisión Frontal)',
+        desc:'El FOW alerta al conductor si detecta riesgo de colisión frontal; si no hay reacción, el AEB aplica los frenos de forma autónoma para evitar o mitigar el impacto.',
+        problem:'Las distracciones al volante (móvil, radio, tráfico denso) son la principal causa de colisiones por alcance, especialmente en ciudad.',
+        solution:'Los radares y cámaras frontales monitorizan constantemente la distancia al vehículo precedente y los obstáculos, actuando antes de que el conductor reaccione.',
+        benefit:'Esto significa que el vehículo puede evitar o mitigar colisiones que el conductor no ha llegado a percibir a tiempo.'
+      },
+      {
+        name:'ACC (Control de Crucero Adaptativo)',
+        desc:'Sistema que mantiene la velocidad configurada por el conductor pero ajusta automáticamente la velocidad para mantener una distancia de seguridad con el vehículo precedente.',
+        problem:'El crucero convencional obliga a desconectarlo y reconectarlo constantemente en tráfico con variaciones de velocidad, lo que resulta fatigoso en viajes largos.',
+        solution:'El ACC adapta la velocidad del vehículo al ritmo del tráfico, frenando y acelerando de forma automática sin intervención del conductor.',
+        benefit:'Esto significa que los viajes en autopista y las retenciones se realizan con mucho menos estrés y fatiga para el conductor.'
+      },
+      {
+        name:'LDW (Advertencia de Cambio de Carril) + BSD (Monitor de Punto Ciego)',
+        desc:'El LDW alerta si el vehículo cruza las líneas del carril sin señalizar; el BSD detecta vehículos en los ángulos muertos y alerta en los retrovisores.',
+        problem:'Las distracciones o la fatiga pueden provocar salidas involuntarias del carril, y los puntos ciegos ocultan vehículos al cambiar de carril.',
+        solution:'Cámaras y radares laterales monitorizan la posición del vehículo en el carril y los ángulos muertos, alertando visual y acústicamente al conductor.',
+        benefit:'Esto significa que el vehículo actúa como un copiloto atento que avisa de situaciones que el conductor podría no percibir.'
+      },
+      {
+        name:'DOW (Advertencia de Apertura de Puertas) + RCW (Advertencia de Colisión Trasera)',
+        desc:'El DOW alerta si se va a abrir una puerta con tráfico aproximándose (ciclistas, vehículos). El RCW avisa a los vehículos que circulan detrás si detecta riesgo de colisión por alcance.',
+        problem:'La apertura inesperada de puertas es causa frecuente de accidentes con ciclistas y motociclistas en entornos urbanos. Las colisiones por alcance en semáforos son también habituales.',
+        solution:'Sensores laterales y traseros monitorizan el tráfico aproximado y alertan antes de que se produzca la maniobra peligrosa.',
+        benefit:'Esto significa que el vehículo protege no solo a sus ocupantes, sino también a otros usuarios de la vía en situaciones cotidianas de riesgo.'
+      }
+    ]
+  },
+  {
+    cat:'Exterior',
+    items:[
+      {
+        name:'Llantas de 20" con neumáticos 255/55 R20',
+        desc:'Llantas de aleación de 20 pulgadas calzadas con neumáticos de perfil 55 y sección 255 mm, un equilibrio entre confort de marcha, agarre y estética.',
+        problem:'Las llantas de gran diámetro con perfil bajo mejoran la estética pero penalizan el confort; las de perfil alto mejoran el confort pero restan precisión.',
+        solution:'La combinación 255/55 R20 ofrece una sección ancha para agarre, un perfil suficiente para absorber irregularidades y un diámetro que proyecta presencia.',
+        benefit:'Esto significa que el vehículo mantiene un buen confort de marcha y una estética imponente sin sacrificar la capacidad de absorción en terrenos irregulares.'
+      },
+      {
+        name:'Luces LED con ajuste + neblineros LED + luz diurna LED',
+        desc:'Sistema de iluminación completamente LED con faros principales ajustables, neblineros y luces diurnas (DRL) también en tecnología LED.',
+        problem:'Las luces halógenas convencionales ofrecen menor visibilidad nocturna, mayor consumo eléctrico y una estética desactualizada.',
+        solution:'La tecnología LED proporciona mayor intensidad lumínica, menor consumo, mayor vida útil y una firma luminosa moderna.',
+        benefit:'Esto significa que la visibilidad nocturna es superior, el consumo eléctrico se reduce y la estética del vehículo gana presencia.'
+      },
+      {
+        name:'Retrovisores abatibles eléctricos con desempañador',
+        desc:'Retrovisores exteriores con ajuste eléctrico, función de plegado eléctrico y resistencia térmica desempañadora.',
+        problem:'Los retrovisores fijos son vulnerables en espacios estrechos y se empañan con facilidad en climas húmedos o fríos.',
+        solution:'El plegado eléctrico protege los retrovisores en maniobras urbanas y el desempañador garantiza visibilidad en cualquier condición atmosférica.',
+        benefit:'Esto significa que los retrovisores se protegen automáticamente en espacios reducidos y mantienen la visibilidad incluso con lluvia o niebla.'
+      }
+    ]
+  },
+  {
+    cat:'Interior y confort',
+    items:[
+      {
+        name:'Asientos de cuero con calefacción, ventilación y memoria de 3 posiciones',
+        desc:'Asientos tapizados en cuero con función de calefacción y ventilación, y memoria de tres posiciones para conductor y copiloto.',
+        problem:'En climas fríos los asientos resultan gélidos al arrancar; en climas cálidos, la tapicería de cuero puede resultar sofocante. Compartir el vehículo implica reajustar los asientos constantemente.',
+        solution:'La calefacción y ventilación climatizan la superficie del asiento, y la memoria permite recuperar la posición ideal con un solo botón, independientemente de quién conduzca.',
+        benefit:'Esto significa que el confort térmico está garantizado en cualquier clima y que cada conductor recupera su posición perfecta sin ajustes manuales.'
+      },
+      {
+        name:'Climatizador bizona automático',
+        desc:'Sistema de climatización con control independiente de temperatura para conductor y acompañante delantero.',
+        problem:'Conductor y acompañante suelen tener preferencias térmicas distintas, lo que genera incomodidad para uno de los dos.',
+        solution:'Cada ocupante puede configurar su zona de temperatura de forma independiente, sin afectar al otro lado del habitáculo.',
+        benefit:'Esto significa que conductor y acompañante viajan cada uno a su temperatura ideal, sin negociaciones.'
+      },
+      {
+        name:'Sunroof panorámico',
+        desc:'Techo solar panorámico de serie que se extiende sobre la mayor parte del techo, inundando el habitáculo de luz natural.',
+        problem:'Los habitáculos cerrados pueden resultar opresivos en viajes largos y restan sensación de amplitud.',
+        solution:'El sunroof panorámico aporta luminosidad natural y una sensación de amplitud que transforma la experiencia a bordo.',
+        benefit:'Esto significa que el habitáculo se percibe más amplio y luminoso, mejorando el confort percibido en todos los ocupantes.'
+      },
+      {
+        name:'Volante de cuero con botones multifunción',
+        desc:'Volante tapizado en cuero con levas y botones integrados para control de audio, teléfono, crucero y paneles.',
+        problem:'Desviar la vista del tablero o soltar el volante para ajustar sistemas del vehículo supone una distracción al conducir.',
+        solution:'Los mandos integrados en el volante permiten controlar las funciones principales sin soltar las manos del volante ni apartar la vista de la carretera.',
+        benefit:'Esto significa que el conductor mantiene el control del vehículo y la atención en la carretera en todo momento.'
+      }
+    ]
+  },
+  {
+    cat:'Tecnología y conectividad',
+    items:[
+      {
+        name:'Pantalla táctil LCD de 15.6"',
+        desc:'Panel central táctil de 15.6 pulgadas que concentra el sistema de infoentretenimiento, navegación, ajustes del vehículo y visualización de cámaras.',
+        problem:'Las pantallas pequeñas de muchos SUV de este rango resultan lentas, con menús confusos y visualización limitada de información.',
+        solution:'Una pantalla de 15.6" — superior a la de muchos televisores domésticos — ofrece una interfaz clara, rápida y con espacio para mostrar múltiples funciones simultáneamente.',
+        benefit:'Esto significa que la interacción con el vehículo es intuitiva, rápida y visualmente agradable, similar a la de un tablet de alta gama.'
+      },
+      {
+        name:'Panel digital de instrumentos de 10.25"',
+        desc:'Cuadro de instrumentos 100% digital, configurable, que muestra velocidad, régimen, autonomía, navegación y datos del sistema híbrido.',
+        problem:'Los cuadros analógicos tradicionales ofrecen información limitada y no permiten personalizar lo que el conductor quiere ver en cada momento.',
+        solution:'El panel digital permite configurar la información mostrada según las preferencias del conductor o el modo de conducción seleccionado.',
+        benefit:'Esto significa que cada conductor puede priorizar la información que le resulta relevante en cada trayecto.'
+      },
+      {
+        name:'Sistema de audio Sony 12+1 parlantes con subwoofer',
+        desc:'Sistema de sonido firmado por Sony con 12 parlantes distribuidos por el habitáculo más un subwoofer dedicado.',
+        problem:'Los sistemas de audio estándar de muchos SUV ofrecen una calidad de sonido limitada, sin graves profundos ni escena sonora envolvente.',
+        solution:'La distribución estratégica de 13 elementos de reproducción y la firma acústica de Sony proporcionan una experiencia de audio envolvente.',
+        benefit:'Esto significa que el habitáculo se convierte en una sala de audio de alta fidelidad, apta para todo tipo de música.'
+      },
+      {
+        name:'Apple CarPlay / Android Auto inalámbricos',
+        desc:'Integración sin cables de smartphones para proyectar aplicaciones del teléfono en la pantalla del vehículo.',
+        problem:'La conexión por cable resulta incómoda y limita el uso del teléfono mientras se carga; muchos vehículos aún exigen cable para CarPlay/Android Auto.',
+        solution:'La conexión inalámbrica permite proyectar las aplicaciones del teléfono en la pantalla del vehículo sin cables, con total libertad de movimiento.',
+        benefit:'Esto significa que el conductor accede a sus aplicaciones favoritas nada más subir al vehículo, sin manipular cables.'
+      },
+      {
+        name:'Control por voz en español ("Hola Jetour")',
+        desc:'Asistente de voz activable con la frase "Hola Jetour" que permite controlar funciones del vehículo, navegación y entretenimiento sin usar las manos.',
+        problem:'Manipular pantallas o botones mientras se conduce distrae la atención y aumenta el riesgo de accidente.',
+        solution:'El control por voz permite ejecutar comandos de forma natural, manteniendo las manos en el volante y la vista en la carretera.',
+        benefit:'Esto significa que muchas funciones del vehículo pueden controlarse de forma segura sin apartar la atención de la conducción.'
+      },
+      {
+        name:'Cargador inalámbrico de teléfono + 4 puertos USB (A/C) + 2 tomacorrientes 12V/180W',
+        desc:'Base de carga por inducción para smartphones, cuatro puertos USB (tipo A y C) y dos tomacorrientes de 12V con potencia de 180W para conectar accesorios.',
+        problem:'Los ocupantes de un vehículo familiar suelen llevar múltiples dispositivos que necesitan carga simultánea, y los equipos portátiles (neveras, infladores) requieren tomas de corriente.',
+        solution:'La combinación de cargador inalámbrico, múltiples puertos USB y tomas de 180W cubre todas las necesidades de carga del habitáculo.',
+        benefit:'Esto significa que todos los ocupantes pueden cargar sus dispositivos simultáneamente y conectar accesorios de hasta 180W sin limitaciones.'
+      }
+    ]
+  },
+  {
+    cat:'Cámara y asistencia al estacionamiento',
+    items:[
+      {
+        name:'Cámara 540° HD con chasis transparente',
+        desc:'Sistema de cámaras que ofrece visión 360° del entorno más una vista "transparente" del suelo bajo el vehículo, simulando ver a través del chasis.',
+        problem:'Estacionar en espacios reducidos, evitar bordillos o enfrentar terrenos irregulares en off-road resulta estresante por los puntos ciegos alrededor del vehículo.',
+        solution:'Las cámaras muestran el entorno completo en una vista cenital y, mediante procesamiento de imagen, proyectan lo que hay bajo el vehículo como si el chasis fuera transparente.',
+        benefit:'Esto significa que el conductor tiene información completa de lo que ocurre alrededor y debajo del vehículo, eliminando los puntos ciegos en maniobras críticas.'
+      },
+      {
+        name:'Sensores de estacionamiento delanteros y traseros',
+        desc:'Sensores ultrasónicos distribuidos en paragolpes delantero y trasero que alertan de la proximidad a obstáculos mediante señales acústicas.',
+        problem:'Los obstáculos bajos (bordillos, bolardos, juguetes) quedan fuera del campo de visión de los retrovisores y pueden dañar los paragolpes.',
+        solution:'Los sensores detectan la proximidad a obstáculos incluso cuando no son visibles desde el puesto de conducción y alertan con mayor frecuencia al acercarse.',
+        benefit:'Esto significa que las maniobras de estacionamiento se realizan con total seguridad, incluso con obstáculos bajos o pequeños.'
+      }
+    ]
+  },
+  {
+    cat:'Dimensiones y capacidad',
+    items:[
+      {
+        name:'Dimensiones exteriores (4.785 x 2.006 x 1.880 mm)',
+        desc:'Longitud de 4.785 mm, anchura de 2.006 mm y altura de 1.880 mm, con una presencia imponente en el segmento D-SUV.',
+        problem:'Muchos SUV del segmento sacrifican espacio interior para mantener dimensiones compactas, comprometiendo el confort de las plazas traseras y el maletero.',
+        solution:'Las dimensiones generosas del T2 PHEV permiten un habitáculo amplio para cinco ocupantes y un maletero de gran capacidad.',
+        benefit:'Esto significa que el vehículo ofrece espacio real para cinco adultos y su equipaje, sin la sensación de estrechez de SUV más compactos.'
+      },
+      {
+        name:'Distancia entre ejes de 2.800 mm',
+        desc:'Batalla de 2.800 mm entre el eje delantero y el trasero, cifra que determina en gran medida el espacio interior para las piernas.',
+        problem:'Las batallas cortas limitan el espacio para las piernas de los ocupantes traseros y reducen la estabilidad en carretera.',
+        solution:'Una batalla de 2.800 mm proporciona espacio generoso para las piernas de las plazas traseras y mejora la estabilidad direccional en carretera.',
+        benefit:'Esto significa que los ocupantes traseros viajan con comodidad incluso en viajes largos, y el vehículo se siente estable y aplomado en autopista.'
+      },
+      {
+        name:'Maletero de 580 litros (ampliable a 1.494 litros)',
+        desc:'Volumen de carga de 580 litros con las cinco plazas en uso, ampliable a 1.494 litros abatendo la segunda fila de asientos.',
+        problem:'Muchos SUV familiares ofrecen maleteros insuficientes para el equipaje de cinco ocupantes en viajes largos.',
+        solution:'Los 580 litros cubren con holgura el equipaje de cinco personas, y el abatimiento de la segunda fila multiplica la capacidad para cargas voluminosas.',
+        benefit:'Esto significa que el vehículo se adapta tanto a viajes familiares con equipaje como al transporte de objetos voluminosos puntualmente.'
+      }
+    ]
+  }
+];
 
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
-    });
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
-})();
+/* ============ FICHA TÉCNICA ============ */
+const techData = [
+  {cat:'Motor y sistema híbrido', rows:[
+    ['Tipo de sistema híbrido','Híbrido enchufable (PHEV)'],
+    ['Motor de combustión interna','1.5L Turbo · 160 HP / 220 Nm'],
+    ['Motor eléctrico 1','100 HP'],
+    ['Motor eléctrico 2','120 HP'],
+    ['Potencia total combinada','380 HP'],
+    ['Torque total combinado','610 Nm'],
+    ['Tipo de batería','Litio ferro fosfato (LiFePO4)'],
+    ['Capacidad de batería','30 kWh'],
+    ['Autonomía eléctrica','100 km WLTC · 139 km NEDC'],
+    ['Autonomía combinada','1.000 km'],
+    ['Consumo modo térmico','5.4 L/100 km'],
+    ['Consumo modo híbrido','0.8 L/100 km'],
+    ['Consumo eléctrico','19.9 kWh/100 km'],
+    ['Aceleración 0-100 km/h','7.5 s'],
+    ['Velocidad máxima','190 km/h'],
+    ['Carga rápida (30-80%)','30 minutos'],
+    ['Cargador portátil de viaje','Sí (incluido)'],
+    ['Regeneración de energía','2 niveles ajustables']
+  ]},
+  {cat:'Transmisión y manejo', rows:[
+    ['Tipo de transmisión','DHT de 3 velocidades'],
+    ['Tracción','Delantera (FWD)'],
+    ['Modos de conducción','Sports · Economy · Standard · Snow · EV · HEV']
+  ]},
+  {cat:'Suspensión y ruedas', rows:[
+    ['Suspensión delantera','MacPherson independiente'],
+    ['Suspensión trasera','Multi-Link independiente'],
+    ['Neumáticos','255 / 55 R20'],
+    ['Llantas','20 pulgadas'],
+    ['Altura al suelo','205 mm'],
+    ['Ángulo de ataque','39°'],
+    ['Ángulo de salida','33°'],
+    ['Ángulo ventral','25°'],
+    ['Capacidad de vadeo','700 mm']
+  ]},
+  {cat:'Seguridad', rows:[
+    ['Airbags','8 (frontales, laterales y de cortina)'],
+    ['ABS','Sí'],
+    ['EBD','Sí'],
+    ['CBC','Sí'],
+    ['ESC','Sí'],
+    ['EPB (freno de estacionamiento eléctrico)','Sí'],
+    ['HSA (arranque en pendiente)','Sí'],
+    ['HDC (control de descenso)','Sí'],
+    ['ROPS (sistema antivuelco)','Sí'],
+    ['TPMS (sensor de presión)','Sí'],
+    ['Función Auto Hold','Sí']
+  ]},
+  {cat:'ADAS', rows:[
+    ['AEB (frenado autónomo de emergencia)','Sí'],
+    ['FOW (advertencia de colisión frontal)','Sí'],
+    ['ACC (crucero adaptativo)','Sí'],
+    ['LDW (advertencia de cambio de carril)','Sí'],
+    ['BSD (monitor de punto ciego)','Sí'],
+    ['DOW (alerta de apertura de puertas)','Sí'],
+    ['RCW (advertencia de colisión trasera)','Sí']
+  ]},
+  {cat:'Exterior', rows:[
+    ['Luces LED con ajuste','Sí'],
+    ['Neblineros LED','Sí'],
+    ['Luz diurna LED','Sí'],
+    ['Retrovisores abatibles eléctricos','Sí'],
+    ['Desempañador de retrovisores','Sí'],
+    ['Limpia parabrisas automático','Sí'],
+    ['Sensores de estacionamiento delanteros y traseros','Sí']
+  ]},
+  {cat:'Interior y confort', rows:[
+    ['Pantalla táctil','15.6" LCD'],
+    ['Panel digital de instrumentos','10.25" LCD'],
+    ['Apple CarPlay / Android Auto','Sí (inalámbrico)'],
+    ['Radio AM / FM / Bluetooth','Sí'],
+    ['Sistema de audio','Sony · 12 parlantes + subwoofer'],
+    ['Control por voz en español','Sí ("Hola Jetour")'],
+    ['Llave inteligente con manos libres','Sí'],
+    ['Botón de encendido','Sí'],
+    ['Vidrios eléctricos One-Key Lift','4'],
+    ['Sunroof panorámico','Sí'],
+    ['Asientos de cuero','Sí'],
+    ['Memoria de posición (3 posiciones)','Sí (conductor y copiloto)'],
+    ['Asiento eléctrico','6 vías conductor · 4 vías copiloto'],
+    ['Calefacción de asientos','Sí'],
+    ['Ventilación de asientos','Sí'],
+    ['Volante de cuero multifunción','Sí'],
+    ['Climatizador bizona','Sí']
+  ]},
+  {cat:'Tecnología', rows:[
+    ['Cámara 540° HD con chasis transparente','Sí'],
+    ['Cargador de teléfono inalámbrico','Sí'],
+    ['Puertos USB (A / C)','4'],
+    ['Tomacorrientes 12V / 180W','2']
+  ]},
+  {cat:'Dimensiones', rows:[
+    ['Largo','4.785 mm'],
+    ['Ancho','2.006 mm'],
+    ['Alto','1.880 mm'],
+    ['Distancia entre ejes','2.800 mm'],
+    ['Maletero (5 plazas)','580 litros'],
+    ['Maletero (asientos abatidos)','1.494 litros']
+  ]},
+  {cat:'Colores y garantía', rows:[
+    ['Colores disponibles','Blanco · Plata Nieve · Negro Noche · Cian Neblina'],
+    ['Garantía','10 años o 120.000 km']
+  ]}
+];
+
+/* ============ RENDER ACORDEONES ============ */
+const accGroup = document.getElementById('accGroup');
+featuresData.forEach((cat,ci)=>{
+  const details = document.createElement('details');
+  details.className = 'acc-cat';
+  details.innerHTML = `
+    <summary>
+      <span>${cat.cat}</span>
+      <span class="acc-icon">+</span>
+    </summary>
+    <div class="acc-body">
+      ${cat.items.map(it=>`
+        <div class="feat">
+          <div class="feat-name">${it.name}</div>
+          <p class="feat-desc">${it.desc}</p>
+          <div class="feat-row">
+            <div class="feat-block">
+              <div class="fb-label">Situación</div>
+              <p>${it.problem}</p>
+            </div>
+            <div class="feat-block">
+              <div class="fb-label">Solución</div>
+              <p>${it.solution}</p>
+            </div>
+            <div class="feat-block benefit">
+              <div class="fb-label">Beneficio</div>
+              <p>${it.benefit}</p>
+            </div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+  accGroup.appendChild(details);
+});
+
+/* ============ RENDER FICHA TÉCNICA ============ */
+const techBody = document.getElementById('techBody');
+techData.forEach(cat=>{
+  const catRow = document.createElement('tr');
+  catRow.className = 'cat-row';
+  catRow.innerHTML = `<th colspan="2">${cat.cat}</th>`;
+  techBody.appendChild(catRow);
+  cat.rows.forEach(r=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<th>${r[0]}</th><td class="active">${r[1]}</td>`;
+    techBody.appendChild(tr);
+  });
+});
+
+/* ============ CERRAR MENÚ MÓVIL AL HACER CLICK ============ */
+document.querySelectorAll('.nav-mobile a').forEach(a=>{
+  a.addEventListener('click',()=>{
+    const toggle = document.querySelector('.nav-toggle');
+    if(toggle) toggle.removeAttribute('open');
+  });
+});
 </script>
-
 </body>
 </html>
